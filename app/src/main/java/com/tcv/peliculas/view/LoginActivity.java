@@ -43,8 +43,8 @@ public class LoginActivity extends AppCompatActivity {
     }
 
     private void inicializarVista() {
-        final EditText usuarioEt = (EditText) findViewById(R.id.usuario_et);
-        final EditText contraseñaEt = (EditText) findViewById(R.id.password_et);
+        final EditText userEditText = (EditText) findViewById(R.id.usuario_et);
+        final EditText passwordEditText = (EditText) findViewById(R.id.password_et);
         Button recuperarBtn = (Button) findViewById(R.id.recuperar_btn);
         Button ingresarBtn = (Button) findViewById(R.id.enter_btn);
 
@@ -54,8 +54,8 @@ public class LoginActivity extends AppCompatActivity {
 
             @Override
             public void onClick(View view) {
-                final String usuario = usuarioEt.getText().toString();
-                final String password = contraseñaEt.getText().toString();
+                final String usuario = userEditText.getText().toString();
+                final String password = passwordEditText.getText().toString();
                 LoginCredentials data = new LoginCredentials(usuario,password);
                 ApiClient.getClient(getApplicationContext()).login(data.getUser(),data.getPwd()).enqueue(new Callback<com.tcv.peliculas.api.LoginResponse>() {
                     @Override

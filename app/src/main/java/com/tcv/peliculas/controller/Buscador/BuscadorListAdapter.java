@@ -24,8 +24,7 @@ public class BuscadorListAdapter extends BaseExpandableListAdapter {
     private ArrayList<ParentRow> parentRowList;
     private ArrayList<ParentRow> originalList;
 
-    public BuscadorListAdapter(Context context
-            , ArrayList<ParentRow> originalList) {
+    public BuscadorListAdapter(Context context , ArrayList<ParentRow> originalList) {
         this.context = context;
         this.parentRowList = new ArrayList<>();
         this.parentRowList.addAll(originalList);

@@ -32,8 +32,8 @@ import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
 
-public class CategoriasActivity extends AppCompatActivity
-        implements NavigationView.OnNavigationItemSelectedListener{
+public class CategoriasActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener{
+
     private RecyclerView categoriasRv;
     private CategoriasListAdapter categoriasAdapter;
     private List<Categoria> categorias;
@@ -78,7 +78,6 @@ public class CategoriasActivity extends AppCompatActivity
         }  else if (id == R.id.cerrar_sesion) {
             cerrarSesion();
         }
-
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
         return true;
@@ -91,6 +90,18 @@ public class CategoriasActivity extends AppCompatActivity
 
         MenuItem mSearch = menu.findItem(R.id.action_search);
 
+        mSearch.setOnMenuItemClickListener(new MenuItem.OnMenuItemClickListener() {
+
+            @Override
+            public boolean onMenuItemClick(MenuItem item) {
+                Intent intent = new Intent(CategoriasActivity.this,
+                        BuscadorActivity.class);
+                CategoriasActivity.this.startActivity(intent);
+                CategoriasActivity.this.finish();
+                return true;
+            }
+        });
+        /*
         SearchView mSearchView = (SearchView) mSearch.getActionView();
         mSearchView.setQueryHint("Search");
 
@@ -106,6 +117,7 @@ public class CategoriasActivity extends AppCompatActivity
                 return true;
             }
         });
+        */
         return super.onCreateOptionsMenu(menu);
     }
 

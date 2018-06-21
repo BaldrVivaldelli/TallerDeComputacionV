@@ -14,7 +14,7 @@
         <meta-data android:name="android.app.searchable"
             android:resource="@xml/searchable"/>
         <activity android:name=".view.ListaPeliculasActivity"/>
-
+        <activity android:name=".view.BuscadorActivity"/>
         <activity android:name=".view.CategoriasActivity"/>
 
         <activity android:name=".view.LoginActivity">
