@@ -158,10 +158,8 @@ public class BuscadorActivity extends AppCompatActivity implements SearchView.On
     }
     private List<Pelicula> peliculas;
     private List<Pelicula> obtenerPeliculas() {
-        {
             peliculas = new ArrayList<Pelicula>();
             ApiClient.getClient(this).getPeliculas().enqueue(new Callback<List<Pelicula>>() {
-
                 @Override
                 public void onResponse(Call<List<Pelicula>> call, Response<List<Pelicula>> response) {
                     peliculas.clear();
@@ -176,6 +174,5 @@ public class BuscadorActivity extends AppCompatActivity implements SearchView.On
 
             });
             return peliculas;
-        }
     }
 }

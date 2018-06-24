@@ -3,6 +3,8 @@ package com.tcv.peliculas.view;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.database.Cursor;
+import android.graphics.Bitmap;
 import android.net.Uri;
 import android.os.Bundle;
 import android.provider.MediaStore;
@@ -98,8 +100,10 @@ public class CategoriasActivity extends AppCompatActivity implements NavigationV
         switch(requestCode) {
             case 0:
                 if(resultCode == RESULT_OK){
-                    Uri selectedImage = imageReturnedIntent.getData();
-                    imageView.setImageURI(selectedImage);
+                    //Uri selectedImage = imageReturnedIntent.getData();
+                    //imageView.setImageURI(selectedImage);
+                    Bitmap photo = (Bitmap) imageReturnedIntent.getExtras().get("data");
+                    imageView.setImageBitmap(photo);
                 }
 
                 break;
@@ -107,9 +111,20 @@ public class CategoriasActivity extends AppCompatActivity implements NavigationV
                 if(resultCode == RESULT_OK){
                     Uri selectedImage = imageReturnedIntent.getData();
                     imageView.setImageURI(selectedImage);
+                    Uri selectedImageUri = imageReturnedIntent.getData();
+                    String selectedImagePath=getPath(selectedImageUri);
+                    imageView.setImageURI(selectedImageUri);
                 }
                 break;
         }
+    }
+    private String getPath(Uri uri)
+    {
+        String[] projection={MediaStore.Images.Media.DATA};
+        Cursor cursor=managedQuery(uri,projection,null,null,null);
+        int column_index=cursor.getColumnIndexOrThrow(MediaStore.Images.Media.DATA);
+        cursor.moveToFirst();
+        return cursor.getString(column_index);
     }
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
@@ -128,82 +143,7 @@ public class CategoriasActivity extends AppCompatActivity implements NavigationV
                 return true;
             }
         });
-        /*
-        SearchView mSearchView = (SearchView) mSearch.getActionView();
-        mSearchView.setQueryHint("Search");
-
-        mSearchView.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
-            @Override
-            public boolean onQueryTextSubmit(String query) {
-                return false;
-            }
-
-            @Override
-            public boolean onQueryTextChange(String titulo) {
-                search(titulo);
-                return true;
-            }
-        });
-        */
         return super.onCreateOptionsMenu(menu);
-    }
-
-    private void search(final String titulo){
-        if (!titulo.equals("")){
-            ApiClient.getClient(this).getCategorias().enqueue(new Callback<List<Categoria>>() {
-                @Override
-                public void onResponse(Call<List<Categoria>> call, Response<List<Categoria>> response) {
-                    categorias.clear();
-                    List<Categoria> categoriasResponse = response.body();
-                    List<Categoria> categoriasToRemove = new ArrayList<>();
-                    List<Pelicula> peliculasToRemove = new ArrayList<>();
-                    try{
-                        for (Categoria categoria : categoriasResponse) {
-                            int peliculasCount = 0;
-                            for (Pelicula pelicula : categoria.getPeliculas()) {
-                                //Si la pelicula no contiene el texto buscado en el titulo lo agrega a peliculas a remover.
-                                if(!pelicula.getTitulo().toLowerCase().contains(titulo.toLowerCase())){
-                                    peliculasCount++;
-                                    peliculasToRemove.add(pelicula);
-                                }
-                            }
-                            //Si la categoria no contiene peliculas se agrega a categorias a remover.
-                            if(peliculasCount == categoria.getPeliculas().size()){
-                                categoriasToRemove.add(categoria);
-                            }
-                        }
-
-                        //Se remueven las categorias vacias.
-                        for (Categoria categoria : categoriasToRemove) {
-                            categoriasResponse.remove(categoria);
-                        }
-
-                        //Se remueven las peliculas no encontradas.
-                        for (Pelicula pelicula : peliculasToRemove) {
-                            for (Categoria categoria : categoriasResponse) {
-                                if(categoria.getPeliculas().contains(pelicula)){
-                                    categoria.getPeliculas().remove(pelicula);
-                                }
-                            }
-                        }
-                    }
-                    catch (Exception e){
-                        Toast.makeText(CategoriasActivity.this, e.getMessage(), Toast.LENGTH_SHORT).show();
-                    }
-
-                    categorias.addAll(categoriasResponse);
-                    categoriasAdapter.notifyDataSetChanged();
-                }
-
-                @Override
-                public void onFailure(Call<List<Categoria>> call, Throwable throwable) {
-                    Toast.makeText(CategoriasActivity.this, "Ocurrio un error al querer obtener la lista de peliculas.", Toast.LENGTH_SHORT).show();
-                }
-            });
-        }
-        else {
-            obtenerCategorias();
-        }
     }
 
     private void obtenerCategorias(){

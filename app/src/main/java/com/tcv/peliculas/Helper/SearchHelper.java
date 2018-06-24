@@ -1,4 +1,4 @@
-package com.tcv.peliculas.persistence;
+package com.tcv.peliculas.Helper;
 
 public  class SearchHelper {
     public static void test(){

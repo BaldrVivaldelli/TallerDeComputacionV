@@ -1,4 +1,4 @@
-package com.tcv.peliculas.persistence;
+package com.tcv.peliculas.Helper;
 
 
 import android.content.ContentValues;
@@ -8,6 +8,7 @@ import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 
 import com.tcv.peliculas.model.Pelicula;
+import com.tcv.peliculas.persistence.Favorito;
 
 import java.util.ArrayList;
 import java.util.List;

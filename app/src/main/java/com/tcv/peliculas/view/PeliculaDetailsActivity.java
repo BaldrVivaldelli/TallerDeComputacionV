@@ -16,7 +16,7 @@ import com.bumptech.glide.Glide;
 import com.google.gson.Gson;
 import com.tcv.peliculas.R;
 import com.tcv.peliculas.model.Pelicula;
-import com.tcv.peliculas.persistence.DatabaseHelper;
+import com.tcv.peliculas.Helper.DatabaseHelper;
 
 public class PeliculaDetailsActivity extends AppCompatActivity {
 
