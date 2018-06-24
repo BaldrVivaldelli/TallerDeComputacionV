@@ -95,7 +95,7 @@ public class PeliculaDetailsActivity extends AppCompatActivity {
                     favorite = false;
                 }
                 else{
-                    dbHelper.insertarFavorito(pelicula.getId(), null);
+                    dbHelper.insertarFavorito(pelicula, null);
                     item.setIcon(R.drawable.favcheck);
                     favorite = true;
                 }

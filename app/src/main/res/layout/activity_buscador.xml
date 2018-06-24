@@ -15,7 +15,7 @@
     <ExpandableListView
         android:id="@+id/expandableListView_search"
         android:layout_width="match_parent"
-        android:layout_height="551dp"
+        android:layout_height="0dp"
         android:layout_alignParentLeft="true">
 
     </ExpandableListView>

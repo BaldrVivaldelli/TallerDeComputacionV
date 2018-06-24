@@ -59,7 +59,6 @@ public class CategoriasListAdapter extends RecyclerView.Adapter<RecyclerView.Vie
             tituloTv.setText(categoria.getTitulo());
             peliculasRv.setLayoutManager(new LinearLayoutManager(context, LinearLayoutManager.HORIZONTAL, false));
             peliculasRv.setAdapter(peliculasListAdapter);
-            //Glide.with(context).load(categoria.getImagen()).into(imagenIv);
         }
     }
 }

@@ -158,21 +158,21 @@ public class BuscadorActivity extends AppCompatActivity implements SearchView.On
     }
     private List<Pelicula> peliculas;
     private List<Pelicula> obtenerPeliculas() {
-            peliculas = new ArrayList<Pelicula>();
-            ApiClient.getClient(this).getPeliculas().enqueue(new Callback<List<Pelicula>>() {
-                @Override
-                public void onResponse(Call<List<Pelicula>> call, Response<List<Pelicula>> response) {
-                    peliculas.clear();
-                    List<Pelicula> peliculasResponse = response.body();
-                    peliculas.addAll(peliculasResponse);
-                }
+        peliculas = new ArrayList<Pelicula>();
+        ApiClient.getClient(this).getPeliculas().enqueue(new Callback<List<Pelicula>>() {
+            @Override
+            public void onResponse(Call<List<Pelicula>> call, Response<List<Pelicula>> response) {
+                peliculas.clear();
+                List<Pelicula> peliculasResponse = response.body();
+                peliculas.addAll(peliculasResponse);
+            }
 
-                @Override
-                public void onFailure(Call<List<Pelicula>> call, Throwable throwable) {
-                    Toast.makeText(BuscadorActivity.this, "Ocurrio un error al querer obtener la lista de peliculas.", Toast.LENGTH_SHORT).show();
-                }
+            @Override
+            public void onFailure(Call<List<Pelicula>> call, Throwable throwable) {
+                Toast.makeText(BuscadorActivity.this, "Ocurrio un error al querer obtener la lista de peliculas.", Toast.LENGTH_SHORT).show();
+            }
 
-            });
-            return peliculas;
+        });
+        return peliculas;
     }
 }

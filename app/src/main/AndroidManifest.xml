@@ -18,6 +18,7 @@
         <activity android:name=".view.BuscadorActivity"/>
         <activity android:name=".view.CategoriasActivity"/>
 
+        <activity android:name=".view.FavoritosActivity"/>
         <activity android:name=".view.LoginActivity">
         <intent-filter>
             <action android:name="android.intent.action.MAIN" />

@@ -88,6 +88,12 @@ public class CategoriasActivity extends AppCompatActivity implements NavigationV
             startActivityForResult(pickPhoto , 1);//one can be replaced with any action code
         }else if(id == R.id.cerrar_sesion) {
             cerrarSesion();
+        }else if(id == R.id.nav_favorite) {
+            //navego a favoritos
+            Intent intent = new Intent(CategoriasActivity.this,
+                    FavoritosActivity.class);
+            CategoriasActivity.this.startActivity(intent);
+            CategoriasActivity.this.finish();
         }
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
@@ -112,7 +118,7 @@ public class CategoriasActivity extends AppCompatActivity implements NavigationV
                     Uri selectedImage = imageReturnedIntent.getData();
                     imageView.setImageURI(selectedImage);
                     Uri selectedImageUri = imageReturnedIntent.getData();
-                    String selectedImagePath=getPath(selectedImageUri);
+                    String selectedImagePath =getPath(selectedImageUri);
                     imageView.setImageURI(selectedImageUri);
                 }
                 break;
