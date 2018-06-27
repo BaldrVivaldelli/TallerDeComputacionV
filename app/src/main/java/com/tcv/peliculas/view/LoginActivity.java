@@ -57,7 +57,7 @@ public class LoginActivity extends AppCompatActivity {
                 final String usuario = userEditText.getText().toString();
                 final String password = passwordEditText.getText().toString();
                 LoginCredentials data = new LoginCredentials(usuario,password);
-                ApiClient.getClient(getApplicationContext()).login(data.getUser(),data.getPwd()).enqueue(new Callback<com.tcv.peliculas.api.LoginResponse>() {
+                ApiClient.getInstance().getClient(getApplicationContext()).login(data.getUser(),data.getPwd()).enqueue(new Callback<com.tcv.peliculas.api.LoginResponse>() {
                     @Override
                     public void onResponse(Call<com.tcv.peliculas.api.LoginResponse> call, Response<com.tcv.peliculas.api.LoginResponse> response) {
                         if (response.body().getData().getUsername().equals(usuario) && response.body().getData().getPassword().equals(password)) {

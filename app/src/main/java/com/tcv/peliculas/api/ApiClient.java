@@ -28,8 +28,15 @@ import retrofit2.converter.gson.GsonConverterFactory;
 public final class ApiClient {
 
     private static ApiService mRestService = null;
+    private static ApiClient instance;
 
-    public static ApiService getClient(Context context) {
+    public static ApiClient getInstance() {
+        if (instance == null) {
+            instance = new ApiClient();
+        }
+        return instance;
+    }
+    public ApiService getClient(Context context) {
         if (mRestService == null) {
             final OkHttpClient client = new OkHttpClient
                     .Builder()

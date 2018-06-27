@@ -38,7 +38,7 @@ public class ListaPeliculasActivity extends AppCompatActivity {
         peliculasAdapter = new PeliculasListAdapter(peliculas, this);
         peliculasRv.setLayoutManager(new LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false));
         peliculasRv.setAdapter(peliculasAdapter);
-        ApiClient.getClient(this).getPeliculas().enqueue(new Callback<List<Pelicula>>() {
+        ApiClient.getInstance().getClient(this).getPeliculas().enqueue(new Callback<List<Pelicula>>() {
             @Override
             public void onResponse(Call<List<Pelicula>> call, Response<List<Pelicula>> response) {
                 peliculas.clear();

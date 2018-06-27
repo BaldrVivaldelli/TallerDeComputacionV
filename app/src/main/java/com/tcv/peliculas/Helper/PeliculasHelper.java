@@ -18,7 +18,7 @@ public class PeliculasHelper {
 
     public static ArrayList<Pelicula> getAll(final Context context){
         final ArrayList<Pelicula> result = new ArrayList<Pelicula>();
-        ApiClient.getClient(context).getPeliculas().enqueue(new Callback<List<Pelicula>>() {
+        ApiClient.getInstance().getClient(context).getPeliculas().enqueue(new Callback<List<Pelicula>>() {
             @Override
             public void onResponse(Call<List<Pelicula>> call, Response<List<Pelicula>> response) {
                 result.clear();

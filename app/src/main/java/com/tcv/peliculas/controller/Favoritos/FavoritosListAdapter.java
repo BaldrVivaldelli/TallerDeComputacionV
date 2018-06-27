@@ -68,7 +68,7 @@ public class FavoritosListAdapter extends RecyclerView.Adapter<RecyclerView.View
             itemView.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    ApiClient.getClient(context).getPeliculas().enqueue(new Callback<List<Pelicula>> () {
+                    ApiClient.getInstance().getClient(context).getPeliculas().enqueue(new Callback<List<Pelicula>> () {
                         @Override
                         public void onResponse(Call<List<Pelicula>> call, Response<List<Pelicula>> response) {
                             List<Pelicula>  peliculas = response.body();

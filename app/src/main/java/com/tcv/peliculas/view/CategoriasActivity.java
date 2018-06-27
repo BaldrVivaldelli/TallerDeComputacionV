@@ -153,7 +153,7 @@ public class CategoriasActivity extends AppCompatActivity implements NavigationV
     }
 
     private void obtenerCategorias(){
-        ApiClient.getClient(this).getCategorias().enqueue(new Callback<List<Categoria>>() {
+        ApiClient.getInstance().getClient(this).getCategorias().enqueue(new Callback<List<Categoria>>() {
             @Override
             public void onResponse(Call<List<Categoria>> call, Response<List<Categoria>> response) {
                 categorias.clear();

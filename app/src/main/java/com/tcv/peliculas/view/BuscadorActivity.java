@@ -1,123 +1,187 @@
 package com.tcv.peliculas.view;
 
-import android.app.SearchManager;
+import android.content.ClipData;
+import android.content.ClipboardManager;
 import android.content.Context;
 import android.content.Intent;
-import android.os.Bundle;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
 import android.support.v4.view.MenuItemCompat;
 import android.support.v7.app.AppCompatActivity;
+import android.os.Bundle;
 import android.support.v7.widget.SearchView;
-import android.support.v7.widget.Toolbar;
+import android.util.Log;
+import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.ExpandableListView;
-import android.widget.Toast;
-
+import android.view.ViewGroup;
+import android.widget.BaseAdapter;
+import android.widget.ImageView;
+import android.widget.ListView;
+import android.widget.TextView;
 
 import com.tcv.peliculas.R;
 import com.tcv.peliculas.api.ApiClient;
-import com.tcv.peliculas.controller.Buscador.BuscadorListAdapter;
-import com.tcv.peliculas.model.ChildRow;
-import com.tcv.peliculas.model.ParentRow;
+import com.tcv.peliculas.api.Post;
 import com.tcv.peliculas.model.Pelicula;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
+import java.util.Locale;
 
 import retrofit2.Call;
-import retrofit2.Callback;
-import retrofit2.Response;
 
-public class BuscadorActivity extends AppCompatActivity implements SearchView.OnQueryTextListener, SearchView.OnCloseListener, android.widget.SearchView.OnCloseListener {
+public class BuscadorActivity extends AppCompatActivity {
 
-    private SearchManager searchManager;
-    private android.widget.SearchView searchView;
-    private BuscadorListAdapter listAdapter;
-    private ExpandableListView myList;
-    private ArrayList<ParentRow> parentList = new ArrayList<ParentRow>();
-    private ArrayList<ParentRow> showTheseParentList = new ArrayList<ParentRow>();
-    private MenuItem searchItem;
-
+    private ListView listView;
+    private BuscadorAdapter myAppAdapter;
+    private ArrayList<Post> postArrayList;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_buscador);
+        listView= (ListView) findViewById(R.id.listView);
+        postArrayList=new ArrayList<>();
 
-        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
-        setSupportActionBar(toolbar);
-
-        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
-        fab.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
-            }
-        });
-
-        searchManager = (SearchManager) getSystemService(Context.SEARCH_SERVICE);
-
-        parentList = new ArrayList<ParentRow>();
-        showTheseParentList = new ArrayList<ParentRow>();
-
-        // The app will crash if display list is not called here.
-        displayList();
-
-        // This expands the list.
-        expandAll();
-
-
-    }
-
-
-    private void loadData() {
-        ArrayList<ChildRow> childRows = new ArrayList<ChildRow>();
-        ParentRow parentRow = null;
         ArrayList<Pelicula> peliculas = (ArrayList<Pelicula>) obtenerPeliculas();
 
-        for (Pelicula pelicula: peliculas) {
-            childRows = new ArrayList<ChildRow>();
-            childRows.add(new ChildRow(R.mipmap.ic_launcher_round
-                    ,pelicula.getTitulo()));
+        for (Pelicula p: peliculas){
+            postArrayList.add(new Post(p.getTitulo(),   p.getLanzamiento()));
+        }
 
-            parentRow = new ParentRow("First Group", childRows);
-            parentList.add(parentRow);
+        myAppAdapter=new BuscadorAdapter(postArrayList,BuscadorActivity.this);
+        listView.setAdapter(myAppAdapter);
+    }
+
+    public class BuscadorAdapter extends BaseAdapter {
+
+        public class ViewHolder {
+            TextView txtTitle,txtSubTitle;
+
+
+        }
+
+        public List<Post> parkingList;
+
+        public Context context;
+        ArrayList<Post> arraylist;
+
+        private BuscadorAdapter(List<Post> apps, Context context) {
+            this.parkingList = apps;
+            this.context = context;
+            arraylist = new ArrayList<Post>();
+            arraylist.addAll(parkingList);
+
+        }
+
+        @Override
+        public int getCount() {
+            return parkingList.size();
+        }
+
+        @Override
+        public Object getItem(int position) {
+            return position;
+        }
+
+        @Override
+        public long getItemId(int position) {
+            return position;
+        }
+
+        @Override
+        public View getView(final int position, View convertView, ViewGroup parent) {
+
+            View rowView = convertView;
+            ViewHolder viewHolder;
+
+            if (rowView == null) {
+                LayoutInflater inflater = getLayoutInflater();
+                rowView = inflater.inflate(R.layout.item_post, null);
+                // configure view holder
+                viewHolder = new ViewHolder();
+                viewHolder.txtTitle = (TextView) rowView.findViewById(R.id.title);
+                viewHolder.txtSubTitle = (TextView) rowView.findViewById(R.id.subtitle);
+                rowView.setTag(viewHolder);
+
+            } else {
+                viewHolder = (ViewHolder) convertView.getTag();
+            }
+
+            viewHolder.txtTitle.setText(parkingList.get(position).getPostTitle() + "");
+            viewHolder.txtSubTitle.setText(parkingList.get(position).getPostSubTitle() + "");
+            return rowView;
+
+
+        }
+
+        public void filter(String charText) {
+
+            charText = charText.toLowerCase(Locale.getDefault());
+
+            parkingList.clear();
+            if (charText.length() == 0) {
+                parkingList.addAll(arraylist);
+
+            } else {
+                for (Post postDetail : arraylist) {
+                    if (charText.length() != 0 && postDetail.getPostTitle().toLowerCase(Locale.getDefault()).contains(charText)) {
+                        parkingList.add(postDetail);
+                    }
+
+                    else if (charText.length() != 0 && postDetail.getPostSubTitle().toLowerCase(Locale.getDefault()).contains(charText)) {
+                        parkingList.add(postDetail);
+                    }
+                }
+            }
+            notifyDataSetChanged();
         }
     }
 
-    private void expandAll() {
-        int count = listAdapter.getGroupCount();
-        for (int i = 0; i < count; i++) {
-            myList.expandGroup(i);
-        } //end for (int i = 0; i < count; i++)
-    }
-
-    private void displayList() {
-        loadData();
-
-        myList = (ExpandableListView) findViewById(R.id.expandableListView_search);
-        listAdapter = new BuscadorListAdapter(this, parentList);
-
-        myList.setAdapter(listAdapter);
-    }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
-        // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_main, menu);
-        searchItem = menu.findItem(R.id.action_search);
+        getMenuInflater().inflate(R.menu.menu_search, menu);
+        MenuItem searchItem = menu.findItem(R.id.action_search);
         SearchView searchView = (SearchView) MenuItemCompat.getActionView(searchItem);
-        searchView.setSearchableInfo
-                (searchManager.getSearchableInfo(getComponentName()));
-        searchView.setIconifiedByDefault(false);
-        searchView.setOnQueryTextListener(this);
-        searchView.setOnCloseListener(this);
-        searchView.requestFocus();
+        //*** setOnQueryTextFocusChangeListener ***
+        searchView.setOnQueryTextFocusChangeListener(new View.OnFocusChangeListener() {
 
+            @Override
+            public void onFocusChange(View v, boolean hasFocus) {
+
+            }
+        });
+
+        searchView.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
+
+            @Override
+            public boolean onQueryTextSubmit(String query) {
+
+                return false;
+            }
+
+            @Override
+            public boolean onQueryTextChange(String searchQuery) {
+                myAppAdapter.filter(searchQuery.toString().trim());
+                listView.invalidate();
+                return true;
+            }
+        });
+
+        MenuItemCompat.setOnActionExpandListener(searchItem, new MenuItemCompat.OnActionExpandListener() {
+            @Override
+            public boolean onMenuItemActionCollapse(MenuItem item) {
+                // Do something when collapsed
+                return true;  // Return true to collapse action view
+            }
+
+            @Override
+            public boolean onMenuItemActionExpand(MenuItem item) {
+                // Do something when expanded
+                return true;  // Return true to expand action view
+            }
+        });
         return true;
     }
 
@@ -126,53 +190,31 @@ public class BuscadorActivity extends AppCompatActivity implements SearchView.On
         // Handle action bar item clicks here. The action bar will
         // automatically handle clicks on the Home/Up button, so long
         // as you specify a parent activity in AndroidManifest.xml.
+        // as you specify a parent activity in AndroidManifest.xml.
         int id = item.getItemId();
 
         //noinspection SimplifiableIfStatement
         if (id == R.id.action_search) {
+
             return true;
         }
-
         return super.onOptionsItemSelected(item);
     }
+    private ArrayList<Pelicula> peliculas;
 
-    @Override
-    public boolean onClose() {
-        listAdapter.filterData("");
-        expandAll();
-        return false;
-    }
-
-    @Override
-    public boolean onQueryTextSubmit(String query) {
-        listAdapter.filterData(query);
-        expandAll();
-        return false;
-    }
-
-    @Override
-    public boolean onQueryTextChange(String newText) {
-        listAdapter.filterData(newText);
-        expandAll();
-        return false;
-    }
-    private List<Pelicula> peliculas;
-    private List<Pelicula> obtenerPeliculas() {
+    private synchronized  List<Pelicula> obtenerPeliculas() {
         peliculas = new ArrayList<Pelicula>();
-        ApiClient.getClient(this).getPeliculas().enqueue(new Callback<List<Pelicula>>() {
-            @Override
-            public void onResponse(Call<List<Pelicula>> call, Response<List<Pelicula>> response) {
-                peliculas.clear();
-                List<Pelicula> peliculasResponse = response.body();
-                peliculas.addAll(peliculasResponse);
-            }
-
-            @Override
-            public void onFailure(Call<List<Pelicula>> call, Throwable throwable) {
-                Toast.makeText(BuscadorActivity.this, "Ocurrio un error al querer obtener la lista de peliculas.", Toast.LENGTH_SHORT).show();
-            }
-
-        });
+        Call<List<Pelicula>> request;
+        List<Pelicula> response;
+        request = ApiClient.getInstance().getClient(this).getPeliculas();
+        try {
+            peliculas.clear();
+            response= request.execute().body();
+            List<Pelicula> peliculasResponse = response;
+            peliculas.addAll(peliculasResponse);
+        }catch (Exception e){
+            int i = 0 ;
+        }
         return peliculas;
     }
 }
