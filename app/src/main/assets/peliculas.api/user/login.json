@@ -1,0 +1,8 @@
+{
+  "status": "success",
+  "data": {
+    "username": "alan",
+    "password": "1234",
+    "email": "abc@gmail.com"
+  }
+}
