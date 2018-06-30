@@ -1,0 +1,257 @@
+-- Merging decision tree log ---
+manifest
+ADDED from C:\Users\Augusto Vivaldelli\Desktop\TP Argenflix\TallerDeComputacionV-Develop2\app\src\main\AndroidManifest.xml:2:1-35:12
+INJECTED from C:\Users\Augusto Vivaldelli\Desktop\TP Argenflix\TallerDeComputacionV-Develop2\app\src\main\AndroidManifest.xml:2:1-35:12
+INJECTED from C:\Users\Augusto Vivaldelli\Desktop\TP Argenflix\TallerDeComputacionV-Develop2\app\src\main\AndroidManifest.xml:2:1-35:12
+INJECTED from C:\Users\Augusto Vivaldelli\Desktop\TP Argenflix\TallerDeComputacionV-Develop2\app\src\main\AndroidManifest.xml:2:1-35:12
+MERGED from [AndroidYouTubePlayer-7.0.0.aar] C:\Users\Augusto Vivaldelli\.gradle\caches\transforms-1\files-1.1\AndroidYouTubePlayer-7.0.0.aar\4f9f6979d8b07cff38105bc6128b0292\AndroidManifest.xml:2:1-20:12
+MERGED from [animated-vector-drawable-26.1.0.aar] C:\Users\Augusto Vivaldelli\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-26.1.0.aar\59f70ae1c1bd5725478b8084ec5cc566\AndroidManifest.xml:17:1-28:12
+MERGED from [appcompat-v7-26.1.0.aar] C:\Users\Augusto Vivaldelli\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.1.0.aar\2204cf7ffc6a76c6c25fa6f990b3c8d4\AndroidManifest.xml:17:1-31:12
+MERGED from [constraint-layout-1.1.0.aar] C:\Users\Augusto Vivaldelli\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.0.aar\de081a90eacd60f0d9489611b65f40bd\AndroidManifest.xml:2:1-11:12
+MERGED from [design-26.1.0.aar] C:\Users\Augusto Vivaldelli\.gradle\caches\transforms-1\files-1.1\design-26.1.0.aar\cf260bb2b6ce0c45acb8f2b13a8f5519\AndroidManifest.xml:17:1-31:12
+MERGED from [extensions-1.1.1.aar] C:\Users\Augusto Vivaldelli\.gradle\caches\transforms-1\files-1.1\extensions-1.1.1.aar\c0c4f94d103624297a85cbc6e4fb95f9\AndroidManifest.xml:17:1-30:12
+MERGED from [livedata-1.1.1.aar] C:\Users\Augusto Vivaldelli\.gradle\caches\transforms-1\files-1.1\livedata-1.1.1.aar\ff6b3d83e653943e692f32da8306b350\AndroidManifest.xml:17:1-22:12
+MERGED from [livedata-core-1.1.1.aar] C:\Users\Augusto Vivaldelli\.gradle\caches\transforms-1\files-1.1\livedata-core-1.1.1.aar\3d2c83224976e1a077e83d57ab8b273b\AndroidManifest.xml:17:1-22:12
+MERGED from [palette-v7-26.1.0.aar] C:\Users\Augusto Vivaldelli\.gradle\caches\transforms-1\files-1.1\palette-v7-26.1.0.aar\b258b7ce53dfe84c696998c03922e927\AndroidManifest.xml:17:1-28:12
+MERGED from [reactivestreams-1.1.1.aar] C:\Users\Augusto Vivaldelli\.gradle\caches\transforms-1\files-1.1\reactivestreams-1.1.1.aar\b1b3c517df3610e9ebc33b56dfaabe3b\AndroidManifest.xml:17:1-22:12
+MERGED from [recyclerview-v7-26.1.0.aar] C:\Users\Augusto Vivaldelli\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-26.1.0.aar\5dad7732bb86a18311db2f84a0d1edc3\AndroidManifest.xml:17:1-28:12
+MERGED from [runtime-1.0.0.aar] C:\Users\Augusto Vivaldelli\.gradle\caches\transforms-1\files-1.1\runtime-1.0.0.aar\5ab24b897fb478f73c19ca17d5026554\AndroidManifest.xml:17:1-30:12
+MERGED from [runtime-1.1.1.aar] C:\Users\Augusto Vivaldelli\.gradle\caches\transforms-1\files-1.1\runtime-1.1.1.aar\b0d588fc18355d3ed1a9688556d832ae\AndroidManifest.xml:17:1-22:12
+MERGED from [support-compat-26.1.0.aar] C:\Users\Augusto Vivaldelli\.gradle\caches\transforms-1\files-1.1\support-compat-26.1.0.aar\7f40cb834dd781b29964413985a890c8\AndroidManifest.xml:17:1-31:12
+MERGED from [support-core-ui-26.1.0.aar] C:\Users\Augusto Vivaldelli\.gradle\caches\transforms-1\files-1.1\support-core-ui-26.1.0.aar\0a22d3865d44a3b66f9df3c4db460a17\AndroidManifest.xml:17:1-31:12
+MERGED from [support-core-utils-26.1.0.aar] C:\Users\Augusto Vivaldelli\.gradle\caches\transforms-1\files-1.1\support-core-utils-26.1.0.aar\818def07ee08407636b29883ac068b52\AndroidManifest.xml:17:1-31:12
+MERGED from [support-fragment-26.1.0.aar] C:\Users\Augusto Vivaldelli\.gradle\caches\transforms-1\files-1.1\support-fragment-26.1.0.aar\1868e31b0396475ff9a1ba99e5515bd2\AndroidManifest.xml:17:1-31:12
+MERGED from [support-media-compat-26.1.0.aar] C:\Users\Augusto Vivaldelli\.gradle\caches\transforms-1\files-1.1\support-media-compat-26.1.0.aar\ccde7e32adb6028de2ecfc1f4f20baa0\AndroidManifest.xml:17:1-31:12
+MERGED from [support-v4-26.1.0.aar] C:\Users\Augusto Vivaldelli\.gradle\caches\transforms-1\files-1.1\support-v4-26.1.0.aar\65a44f406fac76e5c7dd7f9b6ca6159a\AndroidManifest.xml:17:1-31:12
+MERGED from [support-vector-drawable-26.1.0.aar] C:\Users\Augusto Vivaldelli\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-26.1.0.aar\6053af6d6e5280b9e1f2358e54308a21\AndroidManifest.xml:17:1-28:12
+MERGED from [transition-26.1.0.aar] C:\Users\Augusto Vivaldelli\.gradle\caches\transforms-1\files-1.1\transition-26.1.0.aar\4f6697438acbf763d05f7721e89a6b37\AndroidManifest.xml:17:1-28:12
+MERGED from [viewmodel-1.1.1.aar] C:\Users\Augusto Vivaldelli\.gradle\caches\transforms-1\files-1.1\viewmodel-1.1.1.aar\7311befda45f9d9857262d850503df00\AndroidManifest.xml:17:1-22:12
+INJECTED from C:\Users\Augusto Vivaldelli\Desktop\TP Argenflix\TallerDeComputacionV-Develop2\app\src\main\AndroidManifest.xml:2:1-35:12
+INJECTED from C:\Users\Augusto Vivaldelli\Desktop\TP Argenflix\TallerDeComputacionV-Develop2\app\src\main\AndroidManifest.xml:2:1-35:12
+INJECTED from C:\Users\Augusto Vivaldelli\Desktop\TP Argenflix\TallerDeComputacionV-Develop2\app\src\main\AndroidManifest.xml:2:1-35:12
+	package
+		ADDED from C:\Users\Augusto Vivaldelli\Desktop\TP Argenflix\TallerDeComputacionV-Develop2\app\src\main\AndroidManifest.xml:3:5-32
+		INJECTED from C:\Users\Augusto Vivaldelli\Desktop\TP Argenflix\TallerDeComputacionV-Develop2\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Augusto Vivaldelli\Desktop\TP Argenflix\TallerDeComputacionV-Develop2\app\src\main\AndroidManifest.xml
+	android:versionName
+		INJECTED from C:\Users\Augusto Vivaldelli\Desktop\TP Argenflix\TallerDeComputacionV-Develop2\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\Augusto Vivaldelli\Desktop\TP Argenflix\TallerDeComputacionV-Develop2\app\src\main\AndroidManifest.xml:2:1-35:12
+		INJECTED from C:\Users\Augusto Vivaldelli\Desktop\TP Argenflix\TallerDeComputacionV-Develop2\app\src\main\AndroidManifest.xml
+	android:versionCode
+		INJECTED from C:\Users\Augusto Vivaldelli\Desktop\TP Argenflix\TallerDeComputacionV-Develop2\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\Augusto Vivaldelli\Desktop\TP Argenflix\TallerDeComputacionV-Develop2\app\src\main\AndroidManifest.xml:2:1-35:12
+		INJECTED from C:\Users\Augusto Vivaldelli\Desktop\TP Argenflix\TallerDeComputacionV-Develop2\app\src\main\AndroidManifest.xml
+	xmlns:android
+		ADDED from C:\Users\Augusto Vivaldelli\Desktop\TP Argenflix\TallerDeComputacionV-Develop2\app\src\main\AndroidManifest.xml:2:11-69
+uses-permission#android.permission.INTERNET
+ADDED from C:\Users\Augusto Vivaldelli\Desktop\TP Argenflix\TallerDeComputacionV-Develop2\app\src\main\AndroidManifest.xml:5:5-67
+MERGED from [AndroidYouTubePlayer-7.0.0.aar] C:\Users\Augusto Vivaldelli\.gradle\caches\transforms-1\files-1.1\AndroidYouTubePlayer-7.0.0.aar\4f9f6979d8b07cff38105bc6128b0292\AndroidManifest.xml:11:5-67
+MERGED from [AndroidYouTubePlayer-7.0.0.aar] C:\Users\Augusto Vivaldelli\.gradle\caches\transforms-1\files-1.1\AndroidYouTubePlayer-7.0.0.aar\4f9f6979d8b07cff38105bc6128b0292\AndroidManifest.xml:11:5-67
+	android:name
+		ADDED from C:\Users\Augusto Vivaldelli\Desktop\TP Argenflix\TallerDeComputacionV-Develop2\app\src\main\AndroidManifest.xml:5:22-64
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+ADDED from C:\Users\Augusto Vivaldelli\Desktop\TP Argenflix\TallerDeComputacionV-Develop2\app\src\main\AndroidManifest.xml:6:5-81
+	android:name
+		ADDED from C:\Users\Augusto Vivaldelli\Desktop\TP Argenflix\TallerDeComputacionV-Develop2\app\src\main\AndroidManifest.xml:6:22-78
+application
+ADDED from C:\Users\Augusto Vivaldelli\Desktop\TP Argenflix\TallerDeComputacionV-Develop2\app\src\main\AndroidManifest.xml:8:5-33:19
+MERGED from [AndroidYouTubePlayer-7.0.0.aar] C:\Users\Augusto Vivaldelli\.gradle\caches\transforms-1\files-1.1\AndroidYouTubePlayer-7.0.0.aar\4f9f6979d8b07cff38105bc6128b0292\AndroidManifest.xml:14:5-18:19
+MERGED from [AndroidYouTubePlayer-7.0.0.aar] C:\Users\Augusto Vivaldelli\.gradle\caches\transforms-1\files-1.1\AndroidYouTubePlayer-7.0.0.aar\4f9f6979d8b07cff38105bc6128b0292\AndroidManifest.xml:14:5-18:19
+MERGED from [animated-vector-drawable-26.1.0.aar] C:\Users\Augusto Vivaldelli\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-26.1.0.aar\59f70ae1c1bd5725478b8084ec5cc566\AndroidManifest.xml:22:5-26:19
+MERGED from [animated-vector-drawable-26.1.0.aar] C:\Users\Augusto Vivaldelli\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-26.1.0.aar\59f70ae1c1bd5725478b8084ec5cc566\AndroidManifest.xml:22:5-26:19
+MERGED from [appcompat-v7-26.1.0.aar] C:\Users\Augusto Vivaldelli\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.1.0.aar\2204cf7ffc6a76c6c25fa6f990b3c8d4\AndroidManifest.xml:25:5-29:19
+MERGED from [appcompat-v7-26.1.0.aar] C:\Users\Augusto Vivaldelli\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.1.0.aar\2204cf7ffc6a76c6c25fa6f990b3c8d4\AndroidManifest.xml:25:5-29:19
+MERGED from [constraint-layout-1.1.0.aar] C:\Users\Augusto Vivaldelli\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.0.aar\de081a90eacd60f0d9489611b65f40bd\AndroidManifest.xml:9:5-20
+MERGED from [constraint-layout-1.1.0.aar] C:\Users\Augusto Vivaldelli\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.0.aar\de081a90eacd60f0d9489611b65f40bd\AndroidManifest.xml:9:5-20
+MERGED from [design-26.1.0.aar] C:\Users\Augusto Vivaldelli\.gradle\caches\transforms-1\files-1.1\design-26.1.0.aar\cf260bb2b6ce0c45acb8f2b13a8f5519\AndroidManifest.xml:25:5-29:19
+MERGED from [design-26.1.0.aar] C:\Users\Augusto Vivaldelli\.gradle\caches\transforms-1\files-1.1\design-26.1.0.aar\cf260bb2b6ce0c45acb8f2b13a8f5519\AndroidManifest.xml:25:5-29:19
+MERGED from [extensions-1.1.1.aar] C:\Users\Augusto Vivaldelli\.gradle\caches\transforms-1\files-1.1\extensions-1.1.1.aar\c0c4f94d103624297a85cbc6e4fb95f9\AndroidManifest.xml:22:5-28:19
+MERGED from [extensions-1.1.1.aar] C:\Users\Augusto Vivaldelli\.gradle\caches\transforms-1\files-1.1\extensions-1.1.1.aar\c0c4f94d103624297a85cbc6e4fb95f9\AndroidManifest.xml:22:5-28:19
+MERGED from [palette-v7-26.1.0.aar] C:\Users\Augusto Vivaldelli\.gradle\caches\transforms-1\files-1.1\palette-v7-26.1.0.aar\b258b7ce53dfe84c696998c03922e927\AndroidManifest.xml:22:5-26:19
+MERGED from [palette-v7-26.1.0.aar] C:\Users\Augusto Vivaldelli\.gradle\caches\transforms-1\files-1.1\palette-v7-26.1.0.aar\b258b7ce53dfe84c696998c03922e927\AndroidManifest.xml:22:5-26:19
+MERGED from [recyclerview-v7-26.1.0.aar] C:\Users\Augusto Vivaldelli\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-26.1.0.aar\5dad7732bb86a18311db2f84a0d1edc3\AndroidManifest.xml:22:5-26:19
+MERGED from [recyclerview-v7-26.1.0.aar] C:\Users\Augusto Vivaldelli\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-26.1.0.aar\5dad7732bb86a18311db2f84a0d1edc3\AndroidManifest.xml:22:5-26:19
+MERGED from [runtime-1.0.0.aar] C:\Users\Augusto Vivaldelli\.gradle\caches\transforms-1\files-1.1\runtime-1.0.0.aar\5ab24b897fb478f73c19ca17d5026554\AndroidManifest.xml:24:5-28:19
+MERGED from [runtime-1.0.0.aar] C:\Users\Augusto Vivaldelli\.gradle\caches\transforms-1\files-1.1\runtime-1.0.0.aar\5ab24b897fb478f73c19ca17d5026554\AndroidManifest.xml:24:5-28:19
+MERGED from [support-compat-26.1.0.aar] C:\Users\Augusto Vivaldelli\.gradle\caches\transforms-1\files-1.1\support-compat-26.1.0.aar\7f40cb834dd781b29964413985a890c8\AndroidManifest.xml:25:5-29:19
+MERGED from [support-compat-26.1.0.aar] C:\Users\Augusto Vivaldelli\.gradle\caches\transforms-1\files-1.1\support-compat-26.1.0.aar\7f40cb834dd781b29964413985a890c8\AndroidManifest.xml:25:5-29:19
+MERGED from [support-core-ui-26.1.0.aar] C:\Users\Augusto Vivaldelli\.gradle\caches\transforms-1\files-1.1\support-core-ui-26.1.0.aar\0a22d3865d44a3b66f9df3c4db460a17\AndroidManifest.xml:25:5-29:19
+MERGED from [support-core-ui-26.1.0.aar] C:\Users\Augusto Vivaldelli\.gradle\caches\transforms-1\files-1.1\support-core-ui-26.1.0.aar\0a22d3865d44a3b66f9df3c4db460a17\AndroidManifest.xml:25:5-29:19
+MERGED from [support-core-utils-26.1.0.aar] C:\Users\Augusto Vivaldelli\.gradle\caches\transforms-1\files-1.1\support-core-utils-26.1.0.aar\818def07ee08407636b29883ac068b52\AndroidManifest.xml:25:5-29:19
+MERGED from [support-core-utils-26.1.0.aar] C:\Users\Augusto Vivaldelli\.gradle\caches\transforms-1\files-1.1\support-core-utils-26.1.0.aar\818def07ee08407636b29883ac068b52\AndroidManifest.xml:25:5-29:19
+MERGED from [support-fragment-26.1.0.aar] C:\Users\Augusto Vivaldelli\.gradle\caches\transforms-1\files-1.1\support-fragment-26.1.0.aar\1868e31b0396475ff9a1ba99e5515bd2\AndroidManifest.xml:25:5-29:19
+MERGED from [support-fragment-26.1.0.aar] C:\Users\Augusto Vivaldelli\.gradle\caches\transforms-1\files-1.1\support-fragment-26.1.0.aar\1868e31b0396475ff9a1ba99e5515bd2\AndroidManifest.xml:25:5-29:19
+MERGED from [support-media-compat-26.1.0.aar] C:\Users\Augusto Vivaldelli\.gradle\caches\transforms-1\files-1.1\support-media-compat-26.1.0.aar\ccde7e32adb6028de2ecfc1f4f20baa0\AndroidManifest.xml:25:5-29:19
+MERGED from [support-media-compat-26.1.0.aar] C:\Users\Augusto Vivaldelli\.gradle\caches\transforms-1\files-1.1\support-media-compat-26.1.0.aar\ccde7e32adb6028de2ecfc1f4f20baa0\AndroidManifest.xml:25:5-29:19
+MERGED from [support-v4-26.1.0.aar] C:\Users\Augusto Vivaldelli\.gradle\caches\transforms-1\files-1.1\support-v4-26.1.0.aar\65a44f406fac76e5c7dd7f9b6ca6159a\AndroidManifest.xml:25:5-29:19
+MERGED from [support-v4-26.1.0.aar] C:\Users\Augusto Vivaldelli\.gradle\caches\transforms-1\files-1.1\support-v4-26.1.0.aar\65a44f406fac76e5c7dd7f9b6ca6159a\AndroidManifest.xml:25:5-29:19
+MERGED from [support-vector-drawable-26.1.0.aar] C:\Users\Augusto Vivaldelli\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-26.1.0.aar\6053af6d6e5280b9e1f2358e54308a21\AndroidManifest.xml:22:5-26:19
+MERGED from [support-vector-drawable-26.1.0.aar] C:\Users\Augusto Vivaldelli\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-26.1.0.aar\6053af6d6e5280b9e1f2358e54308a21\AndroidManifest.xml:22:5-26:19
+MERGED from [transition-26.1.0.aar] C:\Users\Augusto Vivaldelli\.gradle\caches\transforms-1\files-1.1\transition-26.1.0.aar\4f6697438acbf763d05f7721e89a6b37\AndroidManifest.xml:22:5-26:19
+MERGED from [transition-26.1.0.aar] C:\Users\Augusto Vivaldelli\.gradle\caches\transforms-1\files-1.1\transition-26.1.0.aar\4f6697438acbf763d05f7721e89a6b37\AndroidManifest.xml:22:5-26:19
+	android:supportsRtl
+		ADDED from C:\Users\Augusto Vivaldelli\Desktop\TP Argenflix\TallerDeComputacionV-Develop2\app\src\main\AndroidManifest.xml:13:9-35
+	android:label
+		ADDED from C:\Users\Augusto Vivaldelli\Desktop\TP Argenflix\TallerDeComputacionV-Develop2\app\src\main\AndroidManifest.xml:11:9-41
+	android:roundIcon
+		ADDED from C:\Users\Augusto Vivaldelli\Desktop\TP Argenflix\TallerDeComputacionV-Develop2\app\src\main\AndroidManifest.xml:12:9-54
+	android:icon
+		ADDED from C:\Users\Augusto Vivaldelli\Desktop\TP Argenflix\TallerDeComputacionV-Develop2\app\src\main\AndroidManifest.xml:10:9-43
+	android:allowBackup
+		ADDED from C:\Users\Augusto Vivaldelli\Desktop\TP Argenflix\TallerDeComputacionV-Develop2\app\src\main\AndroidManifest.xml:9:9-35
+	android:theme
+		ADDED from C:\Users\Augusto Vivaldelli\Desktop\TP Argenflix\TallerDeComputacionV-Develop2\app\src\main\AndroidManifest.xml:14:9-40
+meta-data#android.app.searchable
+ADDED from C:\Users\Augusto Vivaldelli\Desktop\TP Argenflix\TallerDeComputacionV-Develop2\app\src\main\AndroidManifest.xml:15:9-16:49
+	android:resource
+		ADDED from C:\Users\Augusto Vivaldelli\Desktop\TP Argenflix\TallerDeComputacionV-Develop2\app\src\main\AndroidManifest.xml:16:13-47
+	android:name
+		ADDED from C:\Users\Augusto Vivaldelli\Desktop\TP Argenflix\TallerDeComputacionV-Develop2\app\src\main\AndroidManifest.xml:15:20-57
+activity#com.tcv.peliculas.view.ListaPeliculasActivity
+ADDED from C:\Users\Augusto Vivaldelli\Desktop\TP Argenflix\TallerDeComputacionV-Develop2\app\src\main\AndroidManifest.xml:17:9-64
+	android:name
+		ADDED from C:\Users\Augusto Vivaldelli\Desktop\TP Argenflix\TallerDeComputacionV-Develop2\app\src\main\AndroidManifest.xml:17:19-62
+activity#com.tcv.peliculas.view.BuscadorActivity
+ADDED from C:\Users\Augusto Vivaldelli\Desktop\TP Argenflix\TallerDeComputacionV-Develop2\app\src\main\AndroidManifest.xml:18:9-58
+	android:name
+		ADDED from C:\Users\Augusto Vivaldelli\Desktop\TP Argenflix\TallerDeComputacionV-Develop2\app\src\main\AndroidManifest.xml:18:19-56
+activity#com.tcv.peliculas.view.CategoriasActivity
+ADDED from C:\Users\Augusto Vivaldelli\Desktop\TP Argenflix\TallerDeComputacionV-Develop2\app\src\main\AndroidManifest.xml:19:9-60
+	android:name
+		ADDED from C:\Users\Augusto Vivaldelli\Desktop\TP Argenflix\TallerDeComputacionV-Develop2\app\src\main\AndroidManifest.xml:19:19-58
+activity#com.tcv.peliculas.view.FavoritosActivity
+ADDED from C:\Users\Augusto Vivaldelli\Desktop\TP Argenflix\TallerDeComputacionV-Develop2\app\src\main\AndroidManifest.xml:21:9-59
+	android:name
+		ADDED from C:\Users\Augusto Vivaldelli\Desktop\TP Argenflix\TallerDeComputacionV-Develop2\app\src\main\AndroidManifest.xml:21:19-57
+activity#com.tcv.peliculas.view.LoginActivity
+ADDED from C:\Users\Augusto Vivaldelli\Desktop\TP Argenflix\TallerDeComputacionV-Develop2\app\src\main\AndroidManifest.xml:22:9-30:20
+	android:name
+		ADDED from C:\Users\Augusto Vivaldelli\Desktop\TP Argenflix\TallerDeComputacionV-Develop2\app\src\main\AndroidManifest.xml:22:19-53
+intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
+ADDED from C:\Users\Augusto Vivaldelli\Desktop\TP Argenflix\TallerDeComputacionV-Develop2\app\src\main\AndroidManifest.xml:23:9-27:25
+action#android.intent.action.MAIN
+ADDED from C:\Users\Augusto Vivaldelli\Desktop\TP Argenflix\TallerDeComputacionV-Develop2\app\src\main\AndroidManifest.xml:24:13-65
+	android:name
+		ADDED from C:\Users\Augusto Vivaldelli\Desktop\TP Argenflix\TallerDeComputacionV-Develop2\app\src\main\AndroidManifest.xml:24:21-62
+category#android.intent.category.LAUNCHER
+ADDED from C:\Users\Augusto Vivaldelli\Desktop\TP Argenflix\TallerDeComputacionV-Develop2\app\src\main\AndroidManifest.xml:26:13-73
+	android:name
+		ADDED from C:\Users\Augusto Vivaldelli\Desktop\TP Argenflix\TallerDeComputacionV-Develop2\app\src\main\AndroidManifest.xml:26:23-70
+activity#com.tcv.peliculas.view.PeliculaDetailsActivity
+ADDED from C:\Users\Augusto Vivaldelli\Desktop\TP Argenflix\TallerDeComputacionV-Develop2\app\src\main\AndroidManifest.xml:31:9-65
+	android:name
+		ADDED from C:\Users\Augusto Vivaldelli\Desktop\TP Argenflix\TallerDeComputacionV-Develop2\app\src\main\AndroidManifest.xml:31:19-63
+activity#com.tcv.peliculas.view.VerPeliculaActivity
+ADDED from C:\Users\Augusto Vivaldelli\Desktop\TP Argenflix\TallerDeComputacionV-Develop2\app\src\main\AndroidManifest.xml:32:9-61
+	android:name
+		ADDED from C:\Users\Augusto Vivaldelli\Desktop\TP Argenflix\TallerDeComputacionV-Develop2\app\src\main\AndroidManifest.xml:32:19-59
+uses-sdk
+INJECTED from C:\Users\Augusto Vivaldelli\Desktop\TP Argenflix\TallerDeComputacionV-Develop2\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from C:\Users\Augusto Vivaldelli\Desktop\TP Argenflix\TallerDeComputacionV-Develop2\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\Augusto Vivaldelli\Desktop\TP Argenflix\TallerDeComputacionV-Develop2\app\src\main\AndroidManifest.xml
+MERGED from [AndroidYouTubePlayer-7.0.0.aar] C:\Users\Augusto Vivaldelli\.gradle\caches\transforms-1\files-1.1\AndroidYouTubePlayer-7.0.0.aar\4f9f6979d8b07cff38105bc6128b0292\AndroidManifest.xml:7:5-9:41
+MERGED from [AndroidYouTubePlayer-7.0.0.aar] C:\Users\Augusto Vivaldelli\.gradle\caches\transforms-1\files-1.1\AndroidYouTubePlayer-7.0.0.aar\4f9f6979d8b07cff38105bc6128b0292\AndroidManifest.xml:7:5-9:41
+MERGED from [animated-vector-drawable-26.1.0.aar] C:\Users\Augusto Vivaldelli\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-26.1.0.aar\59f70ae1c1bd5725478b8084ec5cc566\AndroidManifest.xml:20:5-44
+MERGED from [animated-vector-drawable-26.1.0.aar] C:\Users\Augusto Vivaldelli\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-26.1.0.aar\59f70ae1c1bd5725478b8084ec5cc566\AndroidManifest.xml:20:5-44
+MERGED from [appcompat-v7-26.1.0.aar] C:\Users\Augusto Vivaldelli\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.1.0.aar\2204cf7ffc6a76c6c25fa6f990b3c8d4\AndroidManifest.xml:21:5-23:78
+MERGED from [appcompat-v7-26.1.0.aar] C:\Users\Augusto Vivaldelli\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.1.0.aar\2204cf7ffc6a76c6c25fa6f990b3c8d4\AndroidManifest.xml:21:5-23:78
+MERGED from [constraint-layout-1.1.0.aar] C:\Users\Augusto Vivaldelli\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.0.aar\de081a90eacd60f0d9489611b65f40bd\AndroidManifest.xml:5:5-7:41
+MERGED from [constraint-layout-1.1.0.aar] C:\Users\Augusto Vivaldelli\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.0.aar\de081a90eacd60f0d9489611b65f40bd\AndroidManifest.xml:5:5-7:41
+MERGED from [design-26.1.0.aar] C:\Users\Augusto Vivaldelli\.gradle\caches\transforms-1\files-1.1\design-26.1.0.aar\cf260bb2b6ce0c45acb8f2b13a8f5519\AndroidManifest.xml:21:5-23:62
+MERGED from [design-26.1.0.aar] C:\Users\Augusto Vivaldelli\.gradle\caches\transforms-1\files-1.1\design-26.1.0.aar\cf260bb2b6ce0c45acb8f2b13a8f5519\AndroidManifest.xml:21:5-23:62
+MERGED from [extensions-1.1.1.aar] C:\Users\Augusto Vivaldelli\.gradle\caches\transforms-1\files-1.1\extensions-1.1.1.aar\c0c4f94d103624297a85cbc6e4fb95f9\AndroidManifest.xml:20:5-44
+MERGED from [extensions-1.1.1.aar] C:\Users\Augusto Vivaldelli\.gradle\caches\transforms-1\files-1.1\extensions-1.1.1.aar\c0c4f94d103624297a85cbc6e4fb95f9\AndroidManifest.xml:20:5-44
+MERGED from [livedata-1.1.1.aar] C:\Users\Augusto Vivaldelli\.gradle\caches\transforms-1\files-1.1\livedata-1.1.1.aar\ff6b3d83e653943e692f32da8306b350\AndroidManifest.xml:20:5-44
+MERGED from [livedata-1.1.1.aar] C:\Users\Augusto Vivaldelli\.gradle\caches\transforms-1\files-1.1\livedata-1.1.1.aar\ff6b3d83e653943e692f32da8306b350\AndroidManifest.xml:20:5-44
+MERGED from [livedata-core-1.1.1.aar] C:\Users\Augusto Vivaldelli\.gradle\caches\transforms-1\files-1.1\livedata-core-1.1.1.aar\3d2c83224976e1a077e83d57ab8b273b\AndroidManifest.xml:20:5-44
+MERGED from [livedata-core-1.1.1.aar] C:\Users\Augusto Vivaldelli\.gradle\caches\transforms-1\files-1.1\livedata-core-1.1.1.aar\3d2c83224976e1a077e83d57ab8b273b\AndroidManifest.xml:20:5-44
+MERGED from [palette-v7-26.1.0.aar] C:\Users\Augusto Vivaldelli\.gradle\caches\transforms-1\files-1.1\palette-v7-26.1.0.aar\b258b7ce53dfe84c696998c03922e927\AndroidManifest.xml:20:5-44
+MERGED from [palette-v7-26.1.0.aar] C:\Users\Augusto Vivaldelli\.gradle\caches\transforms-1\files-1.1\palette-v7-26.1.0.aar\b258b7ce53dfe84c696998c03922e927\AndroidManifest.xml:20:5-44
+MERGED from [reactivestreams-1.1.1.aar] C:\Users\Augusto Vivaldelli\.gradle\caches\transforms-1\files-1.1\reactivestreams-1.1.1.aar\b1b3c517df3610e9ebc33b56dfaabe3b\AndroidManifest.xml:20:5-44
+MERGED from [reactivestreams-1.1.1.aar] C:\Users\Augusto Vivaldelli\.gradle\caches\transforms-1\files-1.1\reactivestreams-1.1.1.aar\b1b3c517df3610e9ebc33b56dfaabe3b\AndroidManifest.xml:20:5-44
+MERGED from [recyclerview-v7-26.1.0.aar] C:\Users\Augusto Vivaldelli\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-26.1.0.aar\5dad7732bb86a18311db2f84a0d1edc3\AndroidManifest.xml:20:5-44
+MERGED from [recyclerview-v7-26.1.0.aar] C:\Users\Augusto Vivaldelli\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-26.1.0.aar\5dad7732bb86a18311db2f84a0d1edc3\AndroidManifest.xml:20:5-44
+MERGED from [runtime-1.0.0.aar] C:\Users\Augusto Vivaldelli\.gradle\caches\transforms-1\files-1.1\runtime-1.0.0.aar\5ab24b897fb478f73c19ca17d5026554\AndroidManifest.xml:20:5-22:41
+MERGED from [runtime-1.0.0.aar] C:\Users\Augusto Vivaldelli\.gradle\caches\transforms-1\files-1.1\runtime-1.0.0.aar\5ab24b897fb478f73c19ca17d5026554\AndroidManifest.xml:20:5-22:41
+MERGED from [runtime-1.1.1.aar] C:\Users\Augusto Vivaldelli\.gradle\caches\transforms-1\files-1.1\runtime-1.1.1.aar\b0d588fc18355d3ed1a9688556d832ae\AndroidManifest.xml:20:5-44
+MERGED from [runtime-1.1.1.aar] C:\Users\Augusto Vivaldelli\.gradle\caches\transforms-1\files-1.1\runtime-1.1.1.aar\b0d588fc18355d3ed1a9688556d832ae\AndroidManifest.xml:20:5-44
+MERGED from [support-compat-26.1.0.aar] C:\Users\Augusto Vivaldelli\.gradle\caches\transforms-1\files-1.1\support-compat-26.1.0.aar\7f40cb834dd781b29964413985a890c8\AndroidManifest.xml:21:5-23:58
+MERGED from [support-compat-26.1.0.aar] C:\Users\Augusto Vivaldelli\.gradle\caches\transforms-1\files-1.1\support-compat-26.1.0.aar\7f40cb834dd781b29964413985a890c8\AndroidManifest.xml:21:5-23:58
+MERGED from [support-core-ui-26.1.0.aar] C:\Users\Augusto Vivaldelli\.gradle\caches\transforms-1\files-1.1\support-core-ui-26.1.0.aar\0a22d3865d44a3b66f9df3c4db460a17\AndroidManifest.xml:21:5-23:58
+MERGED from [support-core-ui-26.1.0.aar] C:\Users\Augusto Vivaldelli\.gradle\caches\transforms-1\files-1.1\support-core-ui-26.1.0.aar\0a22d3865d44a3b66f9df3c4db460a17\AndroidManifest.xml:21:5-23:58
+MERGED from [support-core-utils-26.1.0.aar] C:\Users\Augusto Vivaldelli\.gradle\caches\transforms-1\files-1.1\support-core-utils-26.1.0.aar\818def07ee08407636b29883ac068b52\AndroidManifest.xml:21:5-23:61
+MERGED from [support-core-utils-26.1.0.aar] C:\Users\Augusto Vivaldelli\.gradle\caches\transforms-1\files-1.1\support-core-utils-26.1.0.aar\818def07ee08407636b29883ac068b52\AndroidManifest.xml:21:5-23:61
+MERGED from [support-fragment-26.1.0.aar] C:\Users\Augusto Vivaldelli\.gradle\caches\transforms-1\files-1.1\support-fragment-26.1.0.aar\1868e31b0396475ff9a1ba99e5515bd2\AndroidManifest.xml:21:5-23:60
+MERGED from [support-fragment-26.1.0.aar] C:\Users\Augusto Vivaldelli\.gradle\caches\transforms-1\files-1.1\support-fragment-26.1.0.aar\1868e31b0396475ff9a1ba99e5515bd2\AndroidManifest.xml:21:5-23:60
+MERGED from [support-media-compat-26.1.0.aar] C:\Users\Augusto Vivaldelli\.gradle\caches\transforms-1\files-1.1\support-media-compat-26.1.0.aar\ccde7e32adb6028de2ecfc1f4f20baa0\AndroidManifest.xml:21:5-23:63
+MERGED from [support-media-compat-26.1.0.aar] C:\Users\Augusto Vivaldelli\.gradle\caches\transforms-1\files-1.1\support-media-compat-26.1.0.aar\ccde7e32adb6028de2ecfc1f4f20baa0\AndroidManifest.xml:21:5-23:63
+MERGED from [support-v4-26.1.0.aar] C:\Users\Augusto Vivaldelli\.gradle\caches\transforms-1\files-1.1\support-v4-26.1.0.aar\65a44f406fac76e5c7dd7f9b6ca6159a\AndroidManifest.xml:21:5-23:54
+MERGED from [support-v4-26.1.0.aar] C:\Users\Augusto Vivaldelli\.gradle\caches\transforms-1\files-1.1\support-v4-26.1.0.aar\65a44f406fac76e5c7dd7f9b6ca6159a\AndroidManifest.xml:21:5-23:54
+MERGED from [support-vector-drawable-26.1.0.aar] C:\Users\Augusto Vivaldelli\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-26.1.0.aar\6053af6d6e5280b9e1f2358e54308a21\AndroidManifest.xml:20:5-44
+MERGED from [support-vector-drawable-26.1.0.aar] C:\Users\Augusto Vivaldelli\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-26.1.0.aar\6053af6d6e5280b9e1f2358e54308a21\AndroidManifest.xml:20:5-44
+MERGED from [transition-26.1.0.aar] C:\Users\Augusto Vivaldelli\.gradle\caches\transforms-1\files-1.1\transition-26.1.0.aar\4f6697438acbf763d05f7721e89a6b37\AndroidManifest.xml:20:5-44
+MERGED from [transition-26.1.0.aar] C:\Users\Augusto Vivaldelli\.gradle\caches\transforms-1\files-1.1\transition-26.1.0.aar\4f6697438acbf763d05f7721e89a6b37\AndroidManifest.xml:20:5-44
+MERGED from [viewmodel-1.1.1.aar] C:\Users\Augusto Vivaldelli\.gradle\caches\transforms-1\files-1.1\viewmodel-1.1.1.aar\7311befda45f9d9857262d850503df00\AndroidManifest.xml:20:5-44
+MERGED from [viewmodel-1.1.1.aar] C:\Users\Augusto Vivaldelli\.gradle\caches\transforms-1\files-1.1\viewmodel-1.1.1.aar\7311befda45f9d9857262d850503df00\AndroidManifest.xml:20:5-44
+INJECTED from C:\Users\Augusto Vivaldelli\Desktop\TP Argenflix\TallerDeComputacionV-Develop2\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\Augusto Vivaldelli\Desktop\TP Argenflix\TallerDeComputacionV-Develop2\app\src\main\AndroidManifest.xml
+	tools:overrideLibrary
+		ADDED from [appcompat-v7-26.1.0.aar] C:\Users\Augusto Vivaldelli\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.1.0.aar\2204cf7ffc6a76c6c25fa6f990b3c8d4\AndroidManifest.xml:23:9-75
+	android:targetSdkVersion
+		INJECTED from C:\Users\Augusto Vivaldelli\Desktop\TP Argenflix\TallerDeComputacionV-Develop2\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\Augusto Vivaldelli\Desktop\TP Argenflix\TallerDeComputacionV-Develop2\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Augusto Vivaldelli\Desktop\TP Argenflix\TallerDeComputacionV-Develop2\app\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from C:\Users\Augusto Vivaldelli\Desktop\TP Argenflix\TallerDeComputacionV-Develop2\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\Augusto Vivaldelli\Desktop\TP Argenflix\TallerDeComputacionV-Develop2\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Augusto Vivaldelli\Desktop\TP Argenflix\TallerDeComputacionV-Develop2\app\src\main\AndroidManifest.xml
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from [AndroidYouTubePlayer-7.0.0.aar] C:\Users\Augusto Vivaldelli\.gradle\caches\transforms-1\files-1.1\AndroidYouTubePlayer-7.0.0.aar\4f9f6979d8b07cff38105bc6128b0292\AndroidManifest.xml:12:5-79
+	android:name
+		ADDED from [AndroidYouTubePlayer-7.0.0.aar] C:\Users\Augusto Vivaldelli\.gradle\caches\transforms-1\files-1.1\AndroidYouTubePlayer-7.0.0.aar\4f9f6979d8b07cff38105bc6128b0292\AndroidManifest.xml:12:22-76
+meta-data#android.support.VERSION
+ADDED from [animated-vector-drawable-26.1.0.aar] C:\Users\Augusto Vivaldelli\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-26.1.0.aar\59f70ae1c1bd5725478b8084ec5cc566\AndroidManifest.xml:23:9-25:38
+MERGED from [appcompat-v7-26.1.0.aar] C:\Users\Augusto Vivaldelli\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.1.0.aar\2204cf7ffc6a76c6c25fa6f990b3c8d4\AndroidManifest.xml:26:9-28:38
+MERGED from [appcompat-v7-26.1.0.aar] C:\Users\Augusto Vivaldelli\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.1.0.aar\2204cf7ffc6a76c6c25fa6f990b3c8d4\AndroidManifest.xml:26:9-28:38
+MERGED from [design-26.1.0.aar] C:\Users\Augusto Vivaldelli\.gradle\caches\transforms-1\files-1.1\design-26.1.0.aar\cf260bb2b6ce0c45acb8f2b13a8f5519\AndroidManifest.xml:26:9-28:38
+MERGED from [design-26.1.0.aar] C:\Users\Augusto Vivaldelli\.gradle\caches\transforms-1\files-1.1\design-26.1.0.aar\cf260bb2b6ce0c45acb8f2b13a8f5519\AndroidManifest.xml:26:9-28:38
+MERGED from [palette-v7-26.1.0.aar] C:\Users\Augusto Vivaldelli\.gradle\caches\transforms-1\files-1.1\palette-v7-26.1.0.aar\b258b7ce53dfe84c696998c03922e927\AndroidManifest.xml:23:9-25:38
+MERGED from [palette-v7-26.1.0.aar] C:\Users\Augusto Vivaldelli\.gradle\caches\transforms-1\files-1.1\palette-v7-26.1.0.aar\b258b7ce53dfe84c696998c03922e927\AndroidManifest.xml:23:9-25:38
+MERGED from [recyclerview-v7-26.1.0.aar] C:\Users\Augusto Vivaldelli\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-26.1.0.aar\5dad7732bb86a18311db2f84a0d1edc3\AndroidManifest.xml:23:9-25:38
+MERGED from [recyclerview-v7-26.1.0.aar] C:\Users\Augusto Vivaldelli\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-26.1.0.aar\5dad7732bb86a18311db2f84a0d1edc3\AndroidManifest.xml:23:9-25:38
+MERGED from [support-compat-26.1.0.aar] C:\Users\Augusto Vivaldelli\.gradle\caches\transforms-1\files-1.1\support-compat-26.1.0.aar\7f40cb834dd781b29964413985a890c8\AndroidManifest.xml:26:9-28:38
+MERGED from [support-compat-26.1.0.aar] C:\Users\Augusto Vivaldelli\.gradle\caches\transforms-1\files-1.1\support-compat-26.1.0.aar\7f40cb834dd781b29964413985a890c8\AndroidManifest.xml:26:9-28:38
+MERGED from [support-core-ui-26.1.0.aar] C:\Users\Augusto Vivaldelli\.gradle\caches\transforms-1\files-1.1\support-core-ui-26.1.0.aar\0a22d3865d44a3b66f9df3c4db460a17\AndroidManifest.xml:26:9-28:38
+MERGED from [support-core-ui-26.1.0.aar] C:\Users\Augusto Vivaldelli\.gradle\caches\transforms-1\files-1.1\support-core-ui-26.1.0.aar\0a22d3865d44a3b66f9df3c4db460a17\AndroidManifest.xml:26:9-28:38
+MERGED from [support-core-utils-26.1.0.aar] C:\Users\Augusto Vivaldelli\.gradle\caches\transforms-1\files-1.1\support-core-utils-26.1.0.aar\818def07ee08407636b29883ac068b52\AndroidManifest.xml:26:9-28:38
+MERGED from [support-core-utils-26.1.0.aar] C:\Users\Augusto Vivaldelli\.gradle\caches\transforms-1\files-1.1\support-core-utils-26.1.0.aar\818def07ee08407636b29883ac068b52\AndroidManifest.xml:26:9-28:38
+MERGED from [support-fragment-26.1.0.aar] C:\Users\Augusto Vivaldelli\.gradle\caches\transforms-1\files-1.1\support-fragment-26.1.0.aar\1868e31b0396475ff9a1ba99e5515bd2\AndroidManifest.xml:26:9-28:38
+MERGED from [support-fragment-26.1.0.aar] C:\Users\Augusto Vivaldelli\.gradle\caches\transforms-1\files-1.1\support-fragment-26.1.0.aar\1868e31b0396475ff9a1ba99e5515bd2\AndroidManifest.xml:26:9-28:38
+MERGED from [support-media-compat-26.1.0.aar] C:\Users\Augusto Vivaldelli\.gradle\caches\transforms-1\files-1.1\support-media-compat-26.1.0.aar\ccde7e32adb6028de2ecfc1f4f20baa0\AndroidManifest.xml:26:9-28:38
+MERGED from [support-media-compat-26.1.0.aar] C:\Users\Augusto Vivaldelli\.gradle\caches\transforms-1\files-1.1\support-media-compat-26.1.0.aar\ccde7e32adb6028de2ecfc1f4f20baa0\AndroidManifest.xml:26:9-28:38
+MERGED from [support-v4-26.1.0.aar] C:\Users\Augusto Vivaldelli\.gradle\caches\transforms-1\files-1.1\support-v4-26.1.0.aar\65a44f406fac76e5c7dd7f9b6ca6159a\AndroidManifest.xml:26:9-28:38
+MERGED from [support-v4-26.1.0.aar] C:\Users\Augusto Vivaldelli\.gradle\caches\transforms-1\files-1.1\support-v4-26.1.0.aar\65a44f406fac76e5c7dd7f9b6ca6159a\AndroidManifest.xml:26:9-28:38
+MERGED from [support-vector-drawable-26.1.0.aar] C:\Users\Augusto Vivaldelli\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-26.1.0.aar\6053af6d6e5280b9e1f2358e54308a21\AndroidManifest.xml:23:9-25:38
+MERGED from [support-vector-drawable-26.1.0.aar] C:\Users\Augusto Vivaldelli\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-26.1.0.aar\6053af6d6e5280b9e1f2358e54308a21\AndroidManifest.xml:23:9-25:38
+MERGED from [transition-26.1.0.aar] C:\Users\Augusto Vivaldelli\.gradle\caches\transforms-1\files-1.1\transition-26.1.0.aar\4f6697438acbf763d05f7721e89a6b37\AndroidManifest.xml:23:9-25:38
+MERGED from [transition-26.1.0.aar] C:\Users\Augusto Vivaldelli\.gradle\caches\transforms-1\files-1.1\transition-26.1.0.aar\4f6697438acbf763d05f7721e89a6b37\AndroidManifest.xml:23:9-25:38
+	android:value
+		ADDED from [animated-vector-drawable-26.1.0.aar] C:\Users\Augusto Vivaldelli\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-26.1.0.aar\59f70ae1c1bd5725478b8084ec5cc566\AndroidManifest.xml:25:13-35
+	android:name
+		ADDED from [animated-vector-drawable-26.1.0.aar] C:\Users\Augusto Vivaldelli\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-26.1.0.aar\59f70ae1c1bd5725478b8084ec5cc566\AndroidManifest.xml:24:13-51
+provider#android.arch.lifecycle.ProcessLifecycleOwnerInitializer
+ADDED from [extensions-1.1.1.aar] C:\Users\Augusto Vivaldelli\.gradle\caches\transforms-1\files-1.1\extensions-1.1.1.aar\c0c4f94d103624297a85cbc6e4fb95f9\AndroidManifest.xml:23:9-27:43
+	android:authorities
+		ADDED from [extensions-1.1.1.aar] C:\Users\Augusto Vivaldelli\.gradle\caches\transforms-1\files-1.1\extensions-1.1.1.aar\c0c4f94d103624297a85cbc6e4fb95f9\AndroidManifest.xml:25:13-68
+	android:multiprocess
+		ADDED from [extensions-1.1.1.aar] C:\Users\Augusto Vivaldelli\.gradle\caches\transforms-1\files-1.1\extensions-1.1.1.aar\c0c4f94d103624297a85cbc6e4fb95f9\AndroidManifest.xml:27:13-40
+	android:exported
+		ADDED from [extensions-1.1.1.aar] C:\Users\Augusto Vivaldelli\.gradle\caches\transforms-1\files-1.1\extensions-1.1.1.aar\c0c4f94d103624297a85cbc6e4fb95f9\AndroidManifest.xml:26:13-37
+	android:name
+		ADDED from [extensions-1.1.1.aar] C:\Users\Augusto Vivaldelli\.gradle\caches\transforms-1\files-1.1\extensions-1.1.1.aar\c0c4f94d103624297a85cbc6e4fb95f9\AndroidManifest.xml:24:13-83
+meta-data#android.arch.lifecycle.VERSION
+ADDED from [runtime-1.0.0.aar] C:\Users\Augusto Vivaldelli\.gradle\caches\transforms-1\files-1.1\runtime-1.0.0.aar\5ab24b897fb478f73c19ca17d5026554\AndroidManifest.xml:25:9-27:47
+	android:value
+		ADDED from [runtime-1.0.0.aar] C:\Users\Augusto Vivaldelli\.gradle\caches\transforms-1\files-1.1\runtime-1.0.0.aar\5ab24b897fb478f73c19ca17d5026554\AndroidManifest.xml:27:13-44
+	android:name
+		ADDED from [runtime-1.0.0.aar] C:\Users\Augusto Vivaldelli\.gradle\caches\transforms-1\files-1.1\runtime-1.0.0.aar\5ab24b897fb478f73c19ca17d5026554\AndroidManifest.xml:26:13-58

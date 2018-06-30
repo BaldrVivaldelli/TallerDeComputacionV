@@ -1,0 +1,15 @@
+#Internal package file, do not edit.
+#Mon Jun 25 19:51:08 ART 2018
+1.base=C\:\\Users\\Alumno\\Desktop\\TallerDeComputacionV-Develop\\app\\build\\intermediates\\assets\\debug
+2.path=peliculas.api/user/login.json
+0.baseType=DIRECTORY
+2.base=C\:\\Users\\Alumno\\Desktop\\TallerDeComputacionV-Develop\\app\\build\\intermediates\\assets\\debug
+2.set=ASSET
+1.baseType=DIRECTORY
+count=3
+1.set=ASSET
+0.path=peliculas.api/categorias.json
+0.set=ASSET
+0.base=C\:\\Users\\Alumno\\Desktop\\TallerDeComputacionV-Develop\\app\\build\\intermediates\\assets\\debug
+2.baseType=DIRECTORY
+1.path=peliculas.api/peliculas.json
