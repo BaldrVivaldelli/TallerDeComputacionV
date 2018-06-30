@@ -9,7 +9,7 @@ import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
 
-import com.tcv.peliculas.DAO.FavoritoDAO;
+import com.tcv.peliculas.Favoritos.FavoritoDatabase;
 import com.tcv.peliculas.Helper.DatabaseHelper;
 import com.tcv.peliculas.R;
 import com.tcv.peliculas.controller.Favoritos.FavoritosListAdapter;
@@ -20,7 +20,7 @@ import java.util.List;
 public class FavoritosActivity extends AppCompatActivity {
     private RecyclerView favoritosRv;
     private FavoritosListAdapter favoritosListAdapter;
-    private List<FavoritoDAO> favoritos;
+    private List<FavoritoDatabase> favoritos;
     private FavoritosViewModel favoritosViewModel = new FavoritosViewModel(this);
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {

@@ -11,9 +11,13 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import com.tcv.peliculas.Helper.PersistHelper;
 import com.tcv.peliculas.R;
 import com.tcv.peliculas.api.ApiClient;
 import com.tcv.peliculas.model.LoginCredentials;
+
+import java.util.HashSet;
+import java.util.Set;
 
 import retrofit2.Call;
 import retrofit2.Callback;
@@ -56,12 +60,12 @@ public class LoginActivity extends AppCompatActivity {
             public void onClick(View view) {
                 final String usuario = userEditText.getText().toString();
                 final String password = passwordEditText.getText().toString();
-                LoginCredentials data = new LoginCredentials(usuario,password);
+                final LoginCredentials data = new LoginCredentials(usuario,password);
                 ApiClient.getInstance().getClient(getApplicationContext()).login(data.getUser(),data.getPwd()).enqueue(new Callback<com.tcv.peliculas.api.LoginResponse>() {
                     @Override
                     public void onResponse(Call<com.tcv.peliculas.api.LoginResponse> call, Response<com.tcv.peliculas.api.LoginResponse> response) {
                         if (response.body().getData().getUsername().equals(usuario) && response.body().getData().getPassword().equals(password)) {
-                            persistirCredenciales("alan","1234");
+                            persistirCredenciales(data);
                             Intent intent = new Intent(LoginActivity.this,
                                     CategoriasActivity.class);
                             LoginActivity.this.startActivity(intent);
@@ -99,27 +103,21 @@ public class LoginActivity extends AppCompatActivity {
         });
     }
 
-    private void persistirCredenciales(String usuario, String contraseña)
+    private void persistirCredenciales(LoginCredentials data)
     {
-        SharedPreferences sharedPreferences =
-                LoginActivity.this.getSharedPreferences(getString(R.string.app_name),
-                Context.MODE_PRIVATE);
-        SharedPreferences.Editor editor = sharedPreferences.edit();
-        editor.putString("usuario",usuario);
-        editor.commit();
+        PersistHelper.setPreferencesKeyByValue("usuario",data.getUser(),getString(R.string.app_name),this);
+
     }
 
     private void enviarEmail() {
         final EditText usuarioEt = (EditText) findViewById(R.id.usuario_et);
         Intent emailIntent = new Intent (android.content.Intent.ACTION_SEND);
-        emailIntent.setType ("simple / texto");
-        String emailTo = "user@fakehost.com";
-        String app = "soporte@Argentflix.com";
-        String subject = "Problema para ingresar a Argenflix";
+        emailIntent.setType ("simple/text");
+        String emailTo = "soporte@Argentflix.com";
+        String subject = "Necesito ayuda para entrar a Argenflix";
         String texto = "Mi usuario es  "+usuarioEt.getText().toString()
                 +", solicito un blanqueo de clave. ";
         emailIntent.putExtra(Intent.EXTRA_EMAIL, emailTo);
-        emailIntent.putExtra(Intent.EXTRA_CC, app);
         emailIntent.putExtra(Intent.EXTRA_SUBJECT, subject);
         emailIntent.putExtra(Intent.EXTRA_TEXT, texto);
         startActivity (emailIntent);

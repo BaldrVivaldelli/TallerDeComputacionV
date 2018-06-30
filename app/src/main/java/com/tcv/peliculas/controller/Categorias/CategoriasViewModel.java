@@ -15,7 +15,7 @@ public class CategoriasViewModel {
     }
 
     public String getUsername() {
-        SharedPreferences sharedPreferences = context.getSharedPreferences(context.getString(R.string.app_name),
+        SharedPreferences sharedPreferences = context.getSharedPreferences(context.getString(R.string.app_categoria),
                 Context.MODE_PRIVATE);
         return sharedPreferences.getString("usuario", "");
     }

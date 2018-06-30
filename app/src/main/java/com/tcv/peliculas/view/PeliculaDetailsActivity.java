@@ -2,6 +2,8 @@ package com.tcv.peliculas.view;
 
 
 import android.content.Intent;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
@@ -14,9 +16,12 @@ import android.widget.TextView;
 
 import com.bumptech.glide.Glide;
 import com.google.gson.Gson;
+import com.tcv.peliculas.Helper.PeliculasHelper;
 import com.tcv.peliculas.R;
 import com.tcv.peliculas.model.Pelicula;
 import com.tcv.peliculas.Helper.DatabaseHelper;
+
+import java.net.URL;
 
 public class PeliculaDetailsActivity extends AppCompatActivity {
 
@@ -34,9 +39,17 @@ public class PeliculaDetailsActivity extends AppCompatActivity {
         setSupportActionBar(toolbar);
 
         Bundle args = getIntent().getExtras();
-        pelicula = new Gson().fromJson(args.getString("pelicula"), Pelicula.class);
 
-        favorite = dbHelper.getIfIsFavorito(pelicula.getId());
+        try {
+            pelicula = new Gson().fromJson(args.getString("pelicula"), Pelicula.class);
+            favorite = dbHelper.getIfIsFavorito(pelicula.getId());
+        }catch (Exception e){
+            String value = args.getString("pelicula");
+            pelicula = PeliculasHelper.getPeliculaById(this,value);
+        }
+
+
+
 
         TextView titulo = (TextView) findViewById(R.id.titulo);
         titulo.setText(pelicula.getTitulo());
@@ -57,7 +70,18 @@ public class PeliculaDetailsActivity extends AppCompatActivity {
         artistas.setText(pelicula.getArtistas().toString());
 
         ImageView imagen = (ImageView) findViewById(R.id.imagen);
-        Glide.with(this).load(pelicula.getImagen()).into((ImageView) findViewById(R.id.imagen));
+
+
+        try {
+            Glide.with(this).load(pelicula.getLarge_img_url())
+                    .placeholder(R.drawable.ic_search)
+                    .error(R.drawable.ic_search)
+                    .into((ImageView) findViewById(R.id.imagen));
+
+        }catch (Exception e){
+            Glide.with(this).load(pelicula.getImagen()).into((ImageView) findViewById(R.id.imagen));
+        }
+
         imagen.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -66,6 +90,19 @@ public class PeliculaDetailsActivity extends AppCompatActivity {
                 PeliculaDetailsActivity.this.startActivity(intent);
             }
         });
+        if(pelicula.getLarge_img_url() != null) {
+            URL url;
+            Bitmap bmp;
+            try {
+                url = new URL(pelicula.getLarge_img_url());
+                bmp = BitmapFactory.decodeStream(url.openConnection().getInputStream());
+                bmp = BitmapFactory.decodeStream(url.openConnection().getInputStream());
+                imagen.setImageBitmap(bmp);
+            }catch (Exception e){
+               int i = 0;
+            }
+
+        }
         if(pelicula.getImagen() != 0) {
             imagen.setImageResource(pelicula.getImagen());
         }

@@ -4,6 +4,15 @@ public class LoginCredentials {
 
     private String user;
     private String pwd;
+    private String profilePic;
+
+    public String getProfilePic() {
+        return profilePic;
+    }
+
+    public void setProfilePic(String profilePic) {
+        this.profilePic = profilePic;
+    }
 
     public LoginCredentials(String user, String pwd) {
         this.user = user;

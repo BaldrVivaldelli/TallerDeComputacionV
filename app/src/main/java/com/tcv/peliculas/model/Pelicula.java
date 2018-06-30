@@ -9,12 +9,11 @@ public class Pelicula {
     private String genero;
     private int imagen;
     private int imagenMini;
-    private String small_img_url;
     private String lanzamiento;
     private int duracion;
     private List<String> artistas;
     private double puntuacion;
-    private String videoUrl;
+    private String large_img_url;
 
     public String getSmall_img_url() {
         return small_img_url;
@@ -23,6 +22,51 @@ public class Pelicula {
     public void setSmall_img_url(String small_img_url) {
         this.small_img_url = small_img_url;
     }
+
+    private String small_img_url;
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public void setTitulo(String titulo) {
+        this.titulo = titulo;
+    }
+
+    public void setGenero(String genero) {
+        this.genero = genero;
+    }
+
+    public void setImagen(int imagen) {
+        this.imagen = imagen;
+    }
+
+    public void setLanzamiento(String lanzamiento) {
+        this.lanzamiento = lanzamiento;
+    }
+
+    public void setDuracion(int duracion) {
+        this.duracion = duracion;
+    }
+
+    public void setArtistas(List<String> artistas) {
+        this.artistas = artistas;
+    }
+
+    public void setPuntuacion(double puntuacion) {
+        this.puntuacion = puntuacion;
+    }
+
+    public String getLarge_img_url() {
+        return large_img_url;
+    }
+
+    public void setLarge_img_url(String large_img_url) {
+        this.large_img_url = large_img_url;
+    }
+
+    private String videoUrl;
+
 
     public Pelicula(String titulo,
                     String genero, int imagen) {

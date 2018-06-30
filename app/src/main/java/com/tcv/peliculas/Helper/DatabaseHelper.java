@@ -8,7 +8,7 @@ import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 
-import com.tcv.peliculas.DAO.FavoritoDAO;
+import com.tcv.peliculas.Favoritos.FavoritoDatabase;
 import com.tcv.peliculas.R;
 import com.tcv.peliculas.model.Pelicula;
 
@@ -28,7 +28,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
 
     @Override
     public void onCreate(SQLiteDatabase db) {
-        db.execSQL(FavoritoDAO.CREATE_TABLE);
+        db.execSQL(FavoritoDatabase.CREATE_TABLE);
         initialize(db);
     }
 
@@ -38,7 +38,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
             db = this.getWritableDatabase();
             closeDb = true;
         }
-        db.delete(FavoritoDAO.TABLE_NAME, null, null);
+        db.delete(FavoritoDatabase.TABLE_NAME, null, null);
         if(closeDb)
             db.close();
     }
@@ -50,19 +50,19 @@ public class DatabaseHelper extends SQLiteOpenHelper {
             db = this.getWritableDatabase();
             closeDb = true;
         }
-        db.execSQL("DROP TABLE IF EXISTS " + FavoritoDAO.TABLE_NAME + ";");
-        db.execSQL(FavoritoDAO.CREATE_TABLE);
+        db.execSQL("DROP TABLE IF EXISTS " + FavoritoDatabase.TABLE_NAME + ";");
+        db.execSQL(FavoritoDatabase.CREATE_TABLE);
         if(closeDb)
             db.close();
     }
 
     public void insertarFavorito(Pelicula pelicula, SQLiteDatabase db) {
         ContentValues values = new ContentValues();
-        //Columna donde va el dato y el valor.
-        values.put(FavoritoDAO.COLUMN_PELICULA_ID, pelicula.getId());
-        values.put(FavoritoDAO.COLUMN_USUARIO, usuario);
-        values.put(FavoritoDAO.COLUMN_PELICULA_TITULO, pelicula.getTitulo());
-        values.put(FavoritoDAO.COLUMN_PELICULA_IMAGEN, pelicula.getImagenMini());
+        //aca van todas las claves y valores
+        values.put(FavoritoDatabase.COLUMN_PELICULA_ID, pelicula.getId());
+        values.put(FavoritoDatabase.COLUMN_USUARIO, usuario);
+        values.put(FavoritoDatabase.COLUMN_PELICULA_TITULO, pelicula.getTitulo());
+        values.put(FavoritoDatabase.COLUMN_PELICULA_IMAGEN, pelicula.getImagenMini());
         insertContent(values, db);
     }
 
@@ -73,11 +73,12 @@ public class DatabaseHelper extends SQLiteOpenHelper {
 
     private void insertContent(ContentValues values, SQLiteDatabase db) {
         boolean closeDb = false;
+        //crea la base de no existir
         if(db == null) {
             db = this.getWritableDatabase();
             closeDb = true;
         }
-        db.insert(FavoritoDAO.TABLE_NAME, null, values);
+        db.insert(FavoritoDatabase.TABLE_NAME, null, values);
         if(closeDb)
             db.close();
     }
@@ -88,7 +89,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
             db = this.getWritableDatabase();
             closeDb = true;
         }
-        db.delete(FavoritoDAO.TABLE_NAME, FavoritoDAO.COLUMN_PELICULA_ID + "=? AND " + FavoritoDAO.COLUMN_USUARIO + "=?"   , whereArgs);
+        db.delete(FavoritoDatabase.TABLE_NAME, FavoritoDatabase.COLUMN_PELICULA_ID + "=? AND " + FavoritoDatabase.COLUMN_USUARIO + "=?"   , whereArgs);
         if(closeDb)
             db.close();
     }
@@ -98,8 +99,8 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         SQLiteDatabase db = this.getReadableDatabase();
 
         //2º
-        Cursor cursor = db.rawQuery("SELECT COUNT(" + FavoritoDAO.COLUMN_PELICULA_ID + ") AS fav FROM "
-                        + FavoritoDAO.TABLE_NAME + " WHERE " + FavoritoDAO.COLUMN_PELICULA_ID + "=? AND " + FavoritoDAO.COLUMN_USUARIO + "=?;",
+        Cursor cursor = db.rawQuery("SELECT COUNT(" + FavoritoDatabase.COLUMN_PELICULA_ID + ") AS fav FROM "
+                        + FavoritoDatabase.TABLE_NAME + " WHERE " + FavoritoDatabase.COLUMN_PELICULA_ID + "=? AND " + FavoritoDatabase.COLUMN_USUARIO + "=?;",
                 new String[]{String.valueOf(idPelicula), usuario});
 
         //3º
@@ -115,26 +116,26 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         return result;
     }
 
-    public List<FavoritoDAO> getAllFavoritos() {
+    public List<FavoritoDatabase> getAllFavoritos() {
         //1º
         SQLiteDatabase db = this.getReadableDatabase();
 
         //2º
         Cursor cursor = db.rawQuery("SELECT * FROM " +
-                        FavoritoDAO.TABLE_NAME + " WHERE " + FavoritoDAO.COLUMN_USUARIO + "=?;",
+                        FavoritoDatabase.TABLE_NAME + " WHERE " + FavoritoDatabase.COLUMN_USUARIO + "=?;",
                 new String[]{usuario});
 
         //3º
-        List<FavoritoDAO> favoritos = new ArrayList<>();
+        List<FavoritoDatabase> favoritos = new ArrayList<>();
         if (cursor.getCount() > 0) {
             cursor.moveToFirst();
             do {
-                favoritos.add(new FavoritoDAO(
-                        cursor.getInt(cursor.getColumnIndex(FavoritoDAO.COLUMN_ID)),
-                        cursor.getInt(cursor.getColumnIndex(FavoritoDAO.COLUMN_PELICULA_ID)),
-                        cursor.getString(cursor.getColumnIndex(FavoritoDAO.COLUMN_USUARIO)),
-                        cursor.getString(cursor.getColumnIndex(FavoritoDAO.COLUMN_PELICULA_TITULO)),
-                        cursor.getString(cursor.getColumnIndex(FavoritoDAO.COLUMN_PELICULA_IMAGEN))));
+                favoritos.add(new FavoritoDatabase(
+                        cursor.getInt(cursor.getColumnIndex(FavoritoDatabase.COLUMN_ID)),
+                        cursor.getInt(cursor.getColumnIndex(FavoritoDatabase.COLUMN_PELICULA_ID)),
+                        cursor.getString(cursor.getColumnIndex(FavoritoDatabase.COLUMN_USUARIO)),
+                        cursor.getString(cursor.getColumnIndex(FavoritoDatabase.COLUMN_PELICULA_TITULO)),
+                        cursor.getString(cursor.getColumnIndex(FavoritoDatabase.COLUMN_PELICULA_IMAGEN))));
             } while (cursor.moveToNext());
 
             // close the db connection

@@ -14,7 +14,7 @@ import android.widget.Toast;
 import com.bumptech.glide.Glide;
 import com.google.gson.Gson;
 
-import com.tcv.peliculas.DAO.FavoritoDAO;
+import com.tcv.peliculas.Favoritos.FavoritoDatabase;
 import com.tcv.peliculas.R;
 import com.tcv.peliculas.api.ApiClient;
 import com.tcv.peliculas.model.Pelicula;
@@ -28,10 +28,10 @@ import retrofit2.Response;
 
 public class FavoritosListAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder>{
 
-    private List<FavoritoDAO> favoritos;
+    private List<FavoritoDatabase> favoritos;
     private Context context;
 
-    public FavoritosListAdapter(List<FavoritoDAO> favoritos, Context context) {
+    public FavoritosListAdapter(List<FavoritoDatabase> favoritos, Context context) {
         this.favoritos = favoritos;
         this.context = context;
     }
@@ -62,7 +62,7 @@ public class FavoritosListAdapter extends RecyclerView.Adapter<RecyclerView.View
             imagenTv = itemView.findViewById(R.id.imagen);
         }
 
-        public void bind(final FavoritoDAO favorito) {
+        public void bind(final FavoritoDatabase favorito) {
             tituloTv.setText(favorito.getTituloPelicula());
             Glide.with(context).load(favorito.getImagenPelicula()).into(imagenTv);
             itemView.setOnClickListener(new View.OnClickListener() {
@@ -82,7 +82,7 @@ public class FavoritosListAdapter extends RecyclerView.Adapter<RecyclerView.View
                             Intent intent = new Intent(context, PeliculaDetailsActivity.class);
                             intent.putExtra("pelicula", new Gson().toJson(pelicula));
                             context.startActivity(intent);
-                        }
+                    }
 
                         @Override
                         public void onFailure(Call<List<Pelicula>>  call, Throwable throwable) {
