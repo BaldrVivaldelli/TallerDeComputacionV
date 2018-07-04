@@ -64,7 +64,7 @@
     "categorias" : [
         {
             "id": "1",
-            "titulo": "Para el nerd que llevas dentro",
+            "titulo": "Ciencia Ficcion",
             "peliculas" :
             [
                 {
@@ -93,7 +93,7 @@
         },
         {
             "id": "2",
-            "titulo": "Ganas de romper cosas",
+            "titulo": "Accion",
             "peliculas" :
             [
                 {
@@ -118,7 +118,7 @@
         },
         {
             "id": "3",
-            "titulo": "Black Power",
+            "titulo": "Aventura",
             "peliculas" :
             [
                 {

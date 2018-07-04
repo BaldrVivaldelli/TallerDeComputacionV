@@ -1,6 +1,7 @@
 package com.tcv.peliculas.controller.Categorias;
 
 import android.content.Context;
+import android.graphics.Color;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
@@ -56,6 +57,7 @@ public class CategoriasListAdapter extends RecyclerView.Adapter<RecyclerView.Vie
             PeliculasViewModel peliculasViewModel = new PeliculasViewModel(context);
 
             tituloTv.setText(categoria.getTitulo());
+            tituloTv.setBackgroundColor(Color.parseColor("#BABABA"));
             peliculasRv.setLayoutManager(new LinearLayoutManager(context, LinearLayoutManager.HORIZONTAL, false));
             peliculasRv.setAdapter(peliculasListAdapter);
         }

@@ -48,12 +48,12 @@
         "source": "C:\\Users\\Augusto Vivaldelli\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-26.1.0.aar\\7f40cb834dd781b29964413985a890c8\\res\\drawable\\notification_tile_bg.xml"
     },
     {
-        "merged": "C:\\Users\\Augusto Vivaldelli\\Desktop\\TP Argenflix\\TallerDeComputacionV-Develop2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_spinner_mtrl_am_alpha.9.png.flat",
-        "source": "C:\\Users\\Augusto Vivaldelli\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\2204cf7ffc6a76c6c25fa6f990b3c8d4\\res\\drawable-hdpi-v4\\abc_spinner_mtrl_am_alpha.9.png"
-    },
-    {
         "merged": "C:\\Users\\Augusto Vivaldelli\\Desktop\\TP Argenflix\\TallerDeComputacionV-Develop2\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_launcher_round.png.flat",
         "source": "C:\\Users\\Augusto Vivaldelli\\Desktop\\TP Argenflix\\TallerDeComputacionV-Develop2\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "C:\\Users\\Augusto Vivaldelli\\Desktop\\TP Argenflix\\TallerDeComputacionV-Develop2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_spinner_mtrl_am_alpha.9.png.flat",
+        "source": "C:\\Users\\Augusto Vivaldelli\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\2204cf7ffc6a76c6c25fa6f990b3c8d4\\res\\drawable-hdpi-v4\\abc_spinner_mtrl_am_alpha.9.png"
     },
     {
         "merged": "C:\\Users\\Augusto Vivaldelli\\Desktop\\TP Argenflix\\TallerDeComputacionV-Develop2\\app\\build\\intermediates\\res\\merged\\debug\\layout_abc_alert_dialog_material.xml.flat",
@@ -88,12 +88,12 @@
         "source": "C:\\Users\\Augusto Vivaldelli\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\2204cf7ffc6a76c6c25fa6f990b3c8d4\\res\\drawable-xxhdpi-v4\\abc_spinner_mtrl_am_alpha.9.png"
     },
     {
-        "merged": "C:\\Users\\Augusto Vivaldelli\\Desktop\\TP Argenflix\\TallerDeComputacionV-Develop2\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_ver_pelicula.xml.flat",
-        "source": "C:\\Users\\Augusto Vivaldelli\\Desktop\\TP Argenflix\\TallerDeComputacionV-Develop2\\app\\src\\main\\res\\layout\\activity_ver_pelicula.xml"
-    },
-    {
         "merged": "C:\\Users\\Augusto Vivaldelli\\Desktop\\TP Argenflix\\TallerDeComputacionV-Develop2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_menu_hardkey_panel_mtrl_mult.9.png.flat",
         "source": "C:\\Users\\Augusto Vivaldelli\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\2204cf7ffc6a76c6c25fa6f990b3c8d4\\res\\drawable-xxhdpi-v4\\abc_menu_hardkey_panel_mtrl_mult.9.png"
+    },
+    {
+        "merged": "C:\\Users\\Augusto Vivaldelli\\Desktop\\TP Argenflix\\TallerDeComputacionV-Develop2\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_ver_pelicula.xml.flat",
+        "source": "C:\\Users\\Augusto Vivaldelli\\Desktop\\TP Argenflix\\TallerDeComputacionV-Develop2\\app\\src\\main\\res\\layout\\activity_ver_pelicula.xml"
     },
     {
         "merged": "C:\\Users\\Augusto Vivaldelli\\Desktop\\TP Argenflix\\TallerDeComputacionV-Develop2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_btn_check_to_on_mtrl_015.png.flat",
@@ -172,12 +172,12 @@
         "source": "C:\\Users\\Augusto Vivaldelli\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\2204cf7ffc6a76c6c25fa6f990b3c8d4\\res\\drawable-ldrtl-xxhdpi-v17\\abc_ic_menu_copy_mtrl_am_alpha.png"
     },
     {
-        "merged": "C:\\Users\\Augusto Vivaldelli\\Desktop\\TP Argenflix\\TallerDeComputacionV-Develop2\\app\\build\\intermediates\\res\\merged\\debug\\layout_abc_alert_dialog_button_bar_material.xml.flat",
-        "source": "C:\\Users\\Augusto Vivaldelli\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\2204cf7ffc6a76c6c25fa6f990b3c8d4\\res\\layout\\abc_alert_dialog_button_bar_material.xml"
-    },
-    {
         "merged": "C:\\Users\\Augusto Vivaldelli\\Desktop\\TP Argenflix\\TallerDeComputacionV-Develop2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4_abc_ic_menu_copy_mtrl_am_alpha.png.flat",
         "source": "C:\\Users\\Augusto Vivaldelli\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\2204cf7ffc6a76c6c25fa6f990b3c8d4\\res\\drawable-xxxhdpi-v4\\abc_ic_menu_copy_mtrl_am_alpha.png"
+    },
+    {
+        "merged": "C:\\Users\\Augusto Vivaldelli\\Desktop\\TP Argenflix\\TallerDeComputacionV-Develop2\\app\\build\\intermediates\\res\\merged\\debug\\layout_abc_alert_dialog_button_bar_material.xml.flat",
+        "source": "C:\\Users\\Augusto Vivaldelli\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\2204cf7ffc6a76c6c25fa6f990b3c8d4\\res\\layout\\abc_alert_dialog_button_bar_material.xml"
     },
     {
         "merged": "C:\\Users\\Augusto Vivaldelli\\Desktop\\TP Argenflix\\TallerDeComputacionV-Develop2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_ic_pause_36dp.png.flat",
@@ -188,24 +188,24 @@
         "source": "C:\\Users\\Augusto Vivaldelli\\.gradle\\caches\\transforms-1\\files-1.1\\AndroidYouTubePlayer-7.0.0.aar\\4f9f6979d8b07cff38105bc6128b0292\\res\\layout\\menu_item.xml"
     },
     {
-        "merged": "C:\\Users\\Augusto Vivaldelli\\Desktop\\TP Argenflix\\TallerDeComputacionV-Develop2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_ic_star_black_36dp.png.flat",
-        "source": "C:\\Users\\Augusto Vivaldelli\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\2204cf7ffc6a76c6c25fa6f990b3c8d4\\res\\drawable-mdpi-v4\\abc_ic_star_black_36dp.png"
-    },
-    {
         "merged": "C:\\Users\\Augusto Vivaldelli\\Desktop\\TP Argenflix\\TallerDeComputacionV-Develop2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_textfield_activated_mtrl_alpha.9.png.flat",
         "source": "C:\\Users\\Augusto Vivaldelli\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\2204cf7ffc6a76c6c25fa6f990b3c8d4\\res\\drawable-mdpi-v4\\abc_textfield_activated_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "C:\\Users\\Augusto Vivaldelli\\Desktop\\TP Argenflix\\TallerDeComputacionV-Develop2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_ic_star_black_36dp.png.flat",
+        "source": "C:\\Users\\Augusto Vivaldelli\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\2204cf7ffc6a76c6c25fa6f990b3c8d4\\res\\drawable-mdpi-v4\\abc_ic_star_black_36dp.png"
     },
     {
         "merged": "C:\\Users\\Augusto Vivaldelli\\Desktop\\TP Argenflix\\TallerDeComputacionV-Develop2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_btn_check_to_on_mtrl_015.png.flat",
         "source": "C:\\Users\\Augusto Vivaldelli\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\2204cf7ffc6a76c6c25fa6f990b3c8d4\\res\\drawable-xxhdpi-v4\\abc_btn_check_to_on_mtrl_015.png"
     },
     {
-        "merged": "C:\\Users\\Augusto Vivaldelli\\Desktop\\TP Argenflix\\TallerDeComputacionV-Develop2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi-v4_ic_menu_24dp.png.flat",
-        "source": "C:\\Users\\Augusto Vivaldelli\\.gradle\\caches\\transforms-1\\files-1.1\\AndroidYouTubePlayer-7.0.0.aar\\4f9f6979d8b07cff38105bc6128b0292\\res\\drawable-ldpi-v4\\ic_menu_24dp.png"
-    },
-    {
         "merged": "C:\\Users\\Augusto Vivaldelli\\Desktop\\TP Argenflix\\TallerDeComputacionV-Develop2\\app\\build\\intermediates\\res\\merged\\debug\\layout_nav_header_main.xml.flat",
         "source": "C:\\Users\\Augusto Vivaldelli\\Desktop\\TP Argenflix\\TallerDeComputacionV-Develop2\\app\\src\\main\\res\\layout\\nav_header_main.xml"
+    },
+    {
+        "merged": "C:\\Users\\Augusto Vivaldelli\\Desktop\\TP Argenflix\\TallerDeComputacionV-Develop2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi-v4_ic_menu_24dp.png.flat",
+        "source": "C:\\Users\\Augusto Vivaldelli\\.gradle\\caches\\transforms-1\\files-1.1\\AndroidYouTubePlayer-7.0.0.aar\\4f9f6979d8b07cff38105bc6128b0292\\res\\drawable-ldpi-v4\\ic_menu_24dp.png"
     },
     {
         "merged": "C:\\Users\\Augusto Vivaldelli\\Desktop\\TP Argenflix\\TallerDeComputacionV-Develop2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4_abc_ic_star_black_36dp.png.flat",
@@ -224,12 +224,12 @@
         "source": "C:\\Users\\Augusto Vivaldelli\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-26.1.0.aar\\7f40cb834dd781b29964413985a890c8\\res\\drawable-hdpi-v4\\notification_bg_normal_pressed.9.png"
     },
     {
-        "merged": "C:\\Users\\Augusto Vivaldelli\\Desktop\\TP Argenflix\\TallerDeComputacionV-Develop2\\app\\build\\intermediates\\res\\merged\\debug\\layout_player_menu.xml.flat",
-        "source": "C:\\Users\\Augusto Vivaldelli\\.gradle\\caches\\transforms-1\\files-1.1\\AndroidYouTubePlayer-7.0.0.aar\\4f9f6979d8b07cff38105bc6128b0292\\res\\layout\\player_menu.xml"
-    },
-    {
         "merged": "C:\\Users\\Augusto Vivaldelli\\Desktop\\TP Argenflix\\TallerDeComputacionV-Develop2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_ic_star_black_16dp.png.flat",
         "source": "C:\\Users\\Augusto Vivaldelli\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\2204cf7ffc6a76c6c25fa6f990b3c8d4\\res\\drawable-mdpi-v4\\abc_ic_star_black_16dp.png"
+    },
+    {
+        "merged": "C:\\Users\\Augusto Vivaldelli\\Desktop\\TP Argenflix\\TallerDeComputacionV-Develop2\\app\\build\\intermediates\\res\\merged\\debug\\layout_player_menu.xml.flat",
+        "source": "C:\\Users\\Augusto Vivaldelli\\.gradle\\caches\\transforms-1\\files-1.1\\AndroidYouTubePlayer-7.0.0.aar\\4f9f6979d8b07cff38105bc6128b0292\\res\\layout\\player_menu.xml"
     },
     {
         "merged": "C:\\Users\\Augusto Vivaldelli\\Desktop\\TP Argenflix\\TallerDeComputacionV-Develop2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_text_select_handle_middle_mtrl_dark.png.flat",
@@ -260,12 +260,12 @@
         "source": "C:\\Users\\Augusto Vivaldelli\\.gradle\\caches\\transforms-1\\files-1.1\\AndroidYouTubePlayer-7.0.0.aar\\4f9f6979d8b07cff38105bc6128b0292\\res\\drawable-hdpi-v4\\ic_menu_24dp.png"
     },
     {
-        "merged": "C:\\Users\\Augusto Vivaldelli\\Desktop\\TP Argenflix\\TallerDeComputacionV-Develop2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_list_longpressed_holo.9.png.flat",
-        "source": "C:\\Users\\Augusto Vivaldelli\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\2204cf7ffc6a76c6c25fa6f990b3c8d4\\res\\drawable-xhdpi-v4\\abc_list_longpressed_holo.9.png"
-    },
-    {
         "merged": "C:\\Users\\Augusto Vivaldelli\\Desktop\\TP Argenflix\\TallerDeComputacionV-Develop2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_list_longpressed_holo.9.png.flat",
         "source": "C:\\Users\\Augusto Vivaldelli\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\2204cf7ffc6a76c6c25fa6f990b3c8d4\\res\\drawable-mdpi-v4\\abc_list_longpressed_holo.9.png"
+    },
+    {
+        "merged": "C:\\Users\\Augusto Vivaldelli\\Desktop\\TP Argenflix\\TallerDeComputacionV-Develop2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_list_longpressed_holo.9.png.flat",
+        "source": "C:\\Users\\Augusto Vivaldelli\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\2204cf7ffc6a76c6c25fa6f990b3c8d4\\res\\drawable-xhdpi-v4\\abc_list_longpressed_holo.9.png"
     },
     {
         "merged": "C:\\Users\\Augusto Vivaldelli\\Desktop\\TP Argenflix\\TallerDeComputacionV-Develop2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_list_selector_disabled_holo_dark.9.png.flat",
@@ -332,20 +332,20 @@
         "source": "C:\\Users\\Augusto Vivaldelli\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\2204cf7ffc6a76c6c25fa6f990b3c8d4\\res\\layout\\abc_screen_content_include.xml"
     },
     {
-        "merged": "C:\\Users\\Augusto Vivaldelli\\Desktop\\TP Argenflix\\TallerDeComputacionV-Develop2\\app\\build\\intermediates\\res\\merged\\debug\\drawable_abc_vector_test.xml.flat",
-        "source": "C:\\Users\\Augusto Vivaldelli\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\2204cf7ffc6a76c6c25fa6f990b3c8d4\\res\\drawable\\abc_vector_test.xml"
-    },
-    {
         "merged": "C:\\Users\\Augusto Vivaldelli\\Desktop\\TP Argenflix\\TallerDeComputacionV-Develop2\\app\\build\\intermediates\\res\\merged\\debug\\layout_design_bottom_sheet_dialog.xml.flat",
         "source": "C:\\Users\\Augusto Vivaldelli\\.gradle\\caches\\transforms-1\\files-1.1\\design-26.1.0.aar\\cf260bb2b6ce0c45acb8f2b13a8f5519\\res\\layout\\design_bottom_sheet_dialog.xml"
     },
     {
-        "merged": "C:\\Users\\Augusto Vivaldelli\\Desktop\\TP Argenflix\\TallerDeComputacionV-Develop2\\app\\build\\intermediates\\res\\merged\\debug\\drawable_abc_ic_search_api_material.xml.flat",
-        "source": "C:\\Users\\Augusto Vivaldelli\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\2204cf7ffc6a76c6c25fa6f990b3c8d4\\res\\drawable\\abc_ic_search_api_material.xml"
+        "merged": "C:\\Users\\Augusto Vivaldelli\\Desktop\\TP Argenflix\\TallerDeComputacionV-Develop2\\app\\build\\intermediates\\res\\merged\\debug\\drawable_abc_vector_test.xml.flat",
+        "source": "C:\\Users\\Augusto Vivaldelli\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\2204cf7ffc6a76c6c25fa6f990b3c8d4\\res\\drawable\\abc_vector_test.xml"
     },
     {
         "merged": "C:\\Users\\Augusto Vivaldelli\\Desktop\\TP Argenflix\\TallerDeComputacionV-Develop2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_scrubber_control_to_pressed_mtrl_000.png.flat",
         "source": "C:\\Users\\Augusto Vivaldelli\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\2204cf7ffc6a76c6c25fa6f990b3c8d4\\res\\drawable-xxhdpi-v4\\abc_scrubber_control_to_pressed_mtrl_000.png"
+    },
+    {
+        "merged": "C:\\Users\\Augusto Vivaldelli\\Desktop\\TP Argenflix\\TallerDeComputacionV-Develop2\\app\\build\\intermediates\\res\\merged\\debug\\drawable_abc_ic_search_api_material.xml.flat",
+        "source": "C:\\Users\\Augusto Vivaldelli\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\2204cf7ffc6a76c6c25fa6f990b3c8d4\\res\\drawable\\abc_ic_search_api_material.xml"
     },
     {
         "merged": "C:\\Users\\Augusto Vivaldelli\\Desktop\\TP Argenflix\\TallerDeComputacionV-Develop2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_btn_check_to_on_mtrl_000.png.flat",
@@ -552,12 +552,12 @@
         "source": "C:\\Users\\Augusto Vivaldelli\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\2204cf7ffc6a76c6c25fa6f990b3c8d4\\res\\color\\abc_secondary_text_material_dark.xml"
     },
     {
-        "merged": "C:\\Users\\Augusto Vivaldelli\\Desktop\\TP Argenflix\\TallerDeComputacionV-Develop2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_list_divider_mtrl_alpha.9.png.flat",
-        "source": "C:\\Users\\Augusto Vivaldelli\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\2204cf7ffc6a76c6c25fa6f990b3c8d4\\res\\drawable-hdpi-v4\\abc_list_divider_mtrl_alpha.9.png"
-    },
-    {
         "merged": "C:\\Users\\Augusto Vivaldelli\\Desktop\\TP Argenflix\\TallerDeComputacionV-Develop2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_ic_pause_36dp.png.flat",
         "source": "C:\\Users\\Augusto Vivaldelli\\.gradle\\caches\\transforms-1\\files-1.1\\AndroidYouTubePlayer-7.0.0.aar\\4f9f6979d8b07cff38105bc6128b0292\\res\\drawable-hdpi-v4\\ic_pause_36dp.png"
+    },
+    {
+        "merged": "C:\\Users\\Augusto Vivaldelli\\Desktop\\TP Argenflix\\TallerDeComputacionV-Develop2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_list_divider_mtrl_alpha.9.png.flat",
+        "source": "C:\\Users\\Augusto Vivaldelli\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\2204cf7ffc6a76c6c25fa6f990b3c8d4\\res\\drawable-hdpi-v4\\abc_list_divider_mtrl_alpha.9.png"
     },
     {
         "merged": "C:\\Users\\Augusto Vivaldelli\\Desktop\\TP Argenflix\\TallerDeComputacionV-Develop2\\app\\build\\intermediates\\res\\merged\\debug\\layout_notification_media_cancel_action.xml.flat",
@@ -596,12 +596,12 @@
         "source": "C:\\Users\\Augusto Vivaldelli\\Desktop\\TP Argenflix\\TallerDeComputacionV-Develop2\\app\\src\\main\\res\\drawable\\black_panther.jpg"
     },
     {
-        "merged": "C:\\Users\\Augusto Vivaldelli\\Desktop\\TP Argenflix\\TallerDeComputacionV-Develop2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_ic_menu_paste_mtrl_am_alpha.png.flat",
-        "source": "C:\\Users\\Augusto Vivaldelli\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\2204cf7ffc6a76c6c25fa6f990b3c8d4\\res\\drawable-hdpi-v4\\abc_ic_menu_paste_mtrl_am_alpha.png"
-    },
-    {
         "merged": "C:\\Users\\Augusto Vivaldelli\\Desktop\\TP Argenflix\\TallerDeComputacionV-Develop2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_ic_star_half_black_16dp.png.flat",
         "source": "C:\\Users\\Augusto Vivaldelli\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\2204cf7ffc6a76c6c25fa6f990b3c8d4\\res\\drawable-mdpi-v4\\abc_ic_star_half_black_16dp.png"
+    },
+    {
+        "merged": "C:\\Users\\Augusto Vivaldelli\\Desktop\\TP Argenflix\\TallerDeComputacionV-Develop2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_ic_menu_paste_mtrl_am_alpha.png.flat",
+        "source": "C:\\Users\\Augusto Vivaldelli\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\2204cf7ffc6a76c6c25fa6f990b3c8d4\\res\\drawable-hdpi-v4\\abc_ic_menu_paste_mtrl_am_alpha.png"
     },
     {
         "merged": "C:\\Users\\Augusto Vivaldelli\\Desktop\\TP Argenflix\\TallerDeComputacionV-Develop2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4_design_ic_visibility.png.flat",

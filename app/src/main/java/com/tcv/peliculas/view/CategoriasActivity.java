@@ -14,6 +14,8 @@ import android.provider.MediaStore;
 import android.provider.SyncStateContract;
 import android.support.annotation.Nullable;
 import android.support.design.widget.NavigationView;
+import android.support.v4.graphics.drawable.RoundedBitmapDrawable;
+import android.support.v4.graphics.drawable.RoundedBitmapDrawableFactory;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
@@ -82,7 +84,9 @@ public class CategoriasActivity extends AppCompatActivity implements NavigationV
 
         if(imageProfile != null){
             Bitmap result = PersistHelper.decodeToBase64(imageProfile);
-            imagenPerfil.setImageBitmap(result);
+            RoundedBitmapDrawable circularBitMap = circularBitMap(result);
+            imagenPerfil.setImageDrawable(circularBitMap);
+
         }
         imagenPerfil.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v)
@@ -134,6 +138,17 @@ public class CategoriasActivity extends AppCompatActivity implements NavigationV
         return true;
     }
 
+
+private RoundedBitmapDrawable circularBitMap(Bitmap originalBitmap){
+    //creamos el drawable redondeado
+    RoundedBitmapDrawable roundedDrawable =
+            RoundedBitmapDrawableFactory.create(getResources(), originalBitmap);
+    //asignamos el CornerRadius
+    roundedDrawable.setCornerRadius(originalBitmap.getHeight());
+    return roundedDrawable;
+}
+
+
     protected void onActivityResult(int requestCode, int resultCode, Intent imageReturnedIntent) {
         super.onActivityResult(requestCode, resultCode, imageReturnedIntent);
         ImageView imageView = findViewById(R.id.imagenPerfil);
@@ -143,7 +158,8 @@ public class CategoriasActivity extends AppCompatActivity implements NavigationV
                     //Uri selectedImage = imageReturnedIntent.getData();
                     //imageView.setImageURI(selectedImage);
                     Bitmap photo = (Bitmap) imageReturnedIntent.getExtras().get("data");
-                    imageView.setImageBitmap(photo);
+                    RoundedBitmapDrawable circularBitMap = circularBitMap(photo);
+                    imageView.setImageDrawable(circularBitMap);
                     String base64Imagen = PersistHelper.encodeToBase64(photo);
                     String userProfile = "profile_picture_" + userName;
 
@@ -158,8 +174,11 @@ public class CategoriasActivity extends AppCompatActivity implements NavigationV
                     String selectedImagePath =getPath(selectedImageUri);
                     imageView.setImageURI(selectedImageUri);
                     Bitmap bitmap = null;
+                    RoundedBitmapDrawable circularBitMap = null;
                     try {
                         bitmap = MediaStore.Images.Media.getBitmap(this.getContentResolver(),selectedImageUri);
+                        circularBitMap = circularBitMap(bitmap);
+                        imageView.setImageDrawable(circularBitMap);
                     }catch (Exception e){
 
                     }
