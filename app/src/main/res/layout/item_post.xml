@@ -8,7 +8,7 @@
         android:id="@+id/title"
         android:padding="8dp"
     android:textColor="#212121"
-        android:textSize="22sp"
+        android:textSize="18sp"
         android:text="Title"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />

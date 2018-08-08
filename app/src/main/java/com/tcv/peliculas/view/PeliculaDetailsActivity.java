@@ -96,16 +96,20 @@ public class PeliculaDetailsActivity extends AppCompatActivity {
             try {
                 url = new URL(pelicula.getLarge_img_url());
                 bmp = BitmapFactory.decodeStream(url.openConnection().getInputStream());
-                bmp = BitmapFactory.decodeStream(url.openConnection().getInputStream());
                 imagen.setImageBitmap(bmp);
             }catch (Exception e){
                int i = 0;
             }
 
         }
-        if(pelicula.getImagen() != 0) {
-            imagen.setImageResource(pelicula.getImagen());
+        try {
+            if(pelicula.getImagen() != 0) {
+                imagen.setImageResource(pelicula.getImagen());
+            }
+        }catch (Exception e){
+            int i =  1;
         }
+
 
     }
 

@@ -4,6 +4,7 @@ package com.tcv.peliculas.api;
 
 import com.tcv.peliculas.model.Categoria;
 import com.tcv.peliculas.model.Pelicula;
+import com.tcv.peliculas.model.PelisDelMes;
 
 import java.util.List;
 
@@ -23,4 +24,6 @@ public interface ApiService {
 
     @GET("categorias")
     public Call<List<Categoria>> getCategorias();
+    @GET("peliculasdelmes")
+    public Call<List<PelisDelMes>> getPeliculasDelMes();
 }

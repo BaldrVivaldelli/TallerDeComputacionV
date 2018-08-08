@@ -3,7 +3,10 @@
     package="com.tcv.peliculas">
 
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
 
     <application
         android:allowBackup="true"
@@ -17,7 +20,7 @@
         <activity android:name=".view.ListaPeliculasActivity"/>
         <activity android:name=".view.BuscadorActivity"/>
         <activity android:name=".view.CategoriasActivity"/>
-
+        <activity android:name=".view.WelcomeActivity"/>
         <activity android:name=".view.FavoritosActivity"/>
         <activity android:name=".view.LoginActivity">
         <intent-filter>

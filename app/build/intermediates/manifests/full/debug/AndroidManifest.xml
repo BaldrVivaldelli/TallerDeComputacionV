@@ -9,7 +9,10 @@
         android:targetSdkVersion="26" />
 
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 
     <application
@@ -28,6 +31,7 @@
         <activity android:name="com.tcv.peliculas.view.ListaPeliculasActivity" />
         <activity android:name="com.tcv.peliculas.view.BuscadorActivity" />
         <activity android:name="com.tcv.peliculas.view.CategoriasActivity" />
+        <activity android:name="com.tcv.peliculas.view.WelcomeActivity" />
         <activity android:name="com.tcv.peliculas.view.FavoritosActivity" />
         <activity android:name="com.tcv.peliculas.view.LoginActivity" >
             <intent-filter>

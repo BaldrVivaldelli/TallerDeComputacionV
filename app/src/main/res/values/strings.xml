@@ -11,4 +11,22 @@
     <string name="settings">Settings</string>
     <string name="search_hint">Search Me</string>
     <string name="app_categoria">Categoria</string>
+
+    <string name="title_activity_welcome">Home Screen</string>
+    <string name="next">NEXT</string>
+    <string name="skip">SKIP</string>
+    <string name="start">GOT IT</string>
+
+    <string name="slide_1_title">Bienvenido a Argentflix!</string>
+    <string name="slide_1_desc">La forma mas facil de ver peliculas en tu celular!</string>
+
+    <string name="slide_2_title">Gran catalogo</string>
+    <string name="slide_2_desc">Encontraras un extenso catalogo y un excelente buscador de pelis</string>
+
+    <string name="slide_3_title">Personaliza tus gusto</string>
+    <string name="slide_3_desc">Guarda tus peliculas favoritas y encontralas al instante</string>
+
+    <string name="slide_4_title">Perfil</string>
+    <string name="slide_4_desc">Personaliza tu perfil y hace tu cuenta especial</string>
+
 </resources>
