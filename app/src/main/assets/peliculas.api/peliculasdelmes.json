@@ -1,0 +1,94 @@
+[
+  {
+    "id": "1",
+    "titulo": "Ciencia Ficcion",
+    "peliculas" :
+    [
+      {
+        "id" : "1",
+        "titulo" : "Star Wars El Ultimo Jedi",
+        "genero" : "Ciencia Ficcion",
+        "imagen" : "2131165318",
+        "lanzamiento" : "14/12/2017",
+        "small_img_url" : "http://media.gizmodo.co.uk/wp-content/uploads/2018/03/ku6bwrrv2kdk3kku3fyr.jpg",
+        "large_img_url" : "https://zhaikeimgvdo.oss-cn-shenzhen.aliyuncs.com/wp-content/uploads/2017/12/p2504093296.jpg",
+        "duracion" : "152",
+        "artistas" : [
+          "Mark Hamill",
+          "Carrie Fisher",
+          "Adam Driver",
+          "Daisy Ridley",
+          "John Boyega",
+          "Oscar Isaac",
+          "Andy Serkis",
+          "Lupita Nyong'o",
+          "Domhnall Gleeson",
+          "Anthony Daniels"],
+        "video_url" : "https://www.youtube.com/watch?v=Q0CbN8sfihY"
+      },{
+      "id" : "2",
+      "titulo" : "X Men",
+      "genero" : "Ciencia Ficcion",
+      "imagen" : "2131165318",
+      "lanzamiento" : "14/12/2017",
+      "small_img_url" : "http://media.gizmodo.co.uk/wp-content/uploads/2018/03/ku6bwrrv2kdk3kku3fyr.jpg",
+      "large_img_url" : "https://zhaikeimgvdo.oss-cn-shenzhen.aliyuncs.com/wp-content/uploads/2017/12/p2504093296.jpg",
+      "duracion" : "152",
+      "artistas" : [
+        "Mark Hamill",
+        "Carrie Fisher",
+        "Adam Driver",
+        "Daisy Ridley",
+        "John Boyega",
+        "Oscar Isaac",
+        "Andy Serkis",
+        "Lupita Nyong'o",
+        "Domhnall Gleeson",
+        "Anthony Daniels"],
+      "video_url" : "https://www.youtube.com/watch?v=Q0CbN8sfihY"
+    },{
+      "id" : "3",
+      "titulo" : "Los Supersonicos",
+      "genero" : "Ciencia Ficcion",
+      "imagen" : "2131165318",
+      "lanzamiento" : "14/12/2017",
+      "small_img_url" : "http://media.gizmodo.co.uk/wp-content/uploads/2018/03/ku6bwrrv2kdk3kku3fyr.jpg",
+      "large_img_url" : "https://zhaikeimgvdo.oss-cn-shenzhen.aliyuncs.com/wp-content/uploads/2017/12/p2504093296.jpg",
+      "duracion" : "152",
+      "artistas" : [
+        "Mark Hamill",
+        "Carrie Fisher",
+        "Adam Driver",
+        "Daisy Ridley",
+        "John Boyega",
+        "Oscar Isaac",
+        "Andy Serkis",
+        "Lupita Nyong'o",
+        "Domhnall Gleeson",
+        "Anthony Daniels"],
+      "video_url" : "https://www.youtube.com/watch?v=Q0CbN8sfihY"
+    },{
+      "id" : "4",
+      "titulo" : "Los PicaPiedra",
+      "genero" : "Ciencia Ficcion",
+      "imagen" : "2131165318",
+      "lanzamiento" : "14/12/2017",
+      "small_img_url" : "http://media.gizmodo.co.uk/wp-content/uploads/2018/03/ku6bwrrv2kdk3kku3fyr.jpg",
+      "large_img_url" : "https://zhaikeimgvdo.oss-cn-shenzhen.aliyuncs.com/wp-content/uploads/2017/12/p2504093296.jpg",
+      "duracion" : "152",
+      "artistas" : [
+        "Mark Hamill",
+        "Carrie Fisher",
+        "Adam Driver",
+        "Daisy Ridley",
+        "John Boyega",
+        "Oscar Isaac",
+        "Andy Serkis",
+        "Lupita Nyong'o",
+        "Domhnall Gleeson",
+        "Anthony Daniels"],
+      "video_url" : "https://www.youtube.com/watch?v=Q0CbN8sfihY"
+    }
+    ]
+  }
+]
